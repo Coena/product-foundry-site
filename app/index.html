@@ -37,11 +37,33 @@
 
         <div id="pf-intro-container" class="jumbotron">
             <div class="pf-intro" style="background: url('images/home1.jpg') center center; background-size: cover">
-                <div class="pf-intro" style="background: url('images/pattern.svg') center center; background-size: 50px">
-                    <div class="pf-intro" style="background: url('images/vignette.png'); background-size: 100%"></div>
+                <div class="pf-intro" style="background: url('images/pattern.svg') center center; background-size: 40px">
+                    <div class="pf-intro" style="background: url('images/vignette.png'); background-size: cover">
+                        <blockquote class="blockquote-reverse">
+                            Organic order is achieved when there is a perfect balance between the needs of the parts and the needs of the whole.
+                            <footer><cite>Christopher Alexander</cite></footer>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <filter id="dropshadow" height="130%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
+                    <feOffset dx="2" dy="2" result="offsetblur"></feOffset>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+            </defs>
+        </svg>
+
+        <svg id="pf-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image width="200px" height="200px" xlink:href="images/logowhite-rgb.svg" filter="url(#dropshadow)"></image>
+        </svg>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
