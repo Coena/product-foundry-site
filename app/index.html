@@ -35,6 +35,19 @@
         <!-- endbower -->
         <!-- endbuild -->
 
+        <svg id="defs" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+            <defs>
+                <filter id="dropshadow" height="130%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
+                    <feOffset dx="2" dy="2" result="offsetblur"></feOffset>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+            </defs>
+        </svg>
+
         <div id="pf-intro-container" class="jumbotron">
             <div class="pf-intro" style="background: url('images/home1.jpg') center center; background-size: cover">
                 <div class="pf-intro" style="background: url('images/pattern.svg') center center; background-size: 40px">
@@ -47,19 +60,6 @@
                 </div>
             </div>
         </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <filter id="dropshadow" height="130%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
-                    <feOffset dx="2" dy="2" result="offsetblur"></feOffset>
-                    <feMerge>
-                        <feMergeNode></feMergeNode>
-                        <feMergeNode in="SourceGraphic"></feMergeNode>
-                    </feMerge>
-                </filter>
-            </defs>
-        </svg>
 
         <svg id="pf-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image width="200px" height="200px" xlink:href="images/logowhite-rgb.svg" filter="url(#dropshadow)"></image>
