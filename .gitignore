@@ -1,3 +1,8 @@
+# IntelliJ
+.idea
+*.iml
+
+# Yeoman
 node_modules
 dist
 .tmp
