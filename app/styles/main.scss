@@ -2,11 +2,15 @@
 // endbower
 @import 'twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap';
 
+$base-url-assets: "/";
+$base-url-img: "#{$base-url-assets}images/";
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: #f9f9fb;
+  font-family: Glegoo, serif;
 }
 
 .browsehappy {
@@ -57,4 +61,81 @@ html, body {
   width: 200px;
   height: 210px;
 }
+
+#nav-home {
+  display: table;
+  position: absolute;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+  top: 0px;
+  right: 0px;
+
+  ul {
+    padding: 52px 0px 0px 120px;
+    display: table-cell;
+    vertical-align: middle;
+
+    li a {
+      width: 90px;
+      height: 120px;
+
+      padding: 82px 0px 10px 0px;
+      text-align: center;
+      color: #666;
+
+      background-size: 56px;
+      background-position: center top;
+      background-repeat: no-repeat;
+
+      &:hover {
+        background-color: transparent;
+        color: #222;
+      }
+    }
+  }
+
+  #nav-values {
+    background-image: url("#{$base-url-img}red.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}red-hover.svg");
+    }
+  }
+
+  #nav-change {
+    background-image: url("#{$base-url-img}orange.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}orange-hover.svg");
+    }
+  }
+
+  #nav-background {
+    background-image: url("#{$base-url-img}green.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}green-hover.svg");
+    }
+  }
+
+  #nav-portfolio {
+    background-image: url("#{$base-url-img}purple.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}purple-hover.svg");
+    }
+  }
+
+  #nav-contact {
+    background-image: url("#{$base-url-img}blue.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}blue-hover.svg");
+    }
+  }
+
+}
+
 
