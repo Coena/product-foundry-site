@@ -224,14 +224,21 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images'],
+                patterns: {
+                    html2: [[/xlink:href="(.*\.svg)"/, 'Replacing reference to linked svg']]
+                }
             },
             html: ['<%= config.dist %>/{,*/}*.html'],
+            html2: ['<%= config.dist %>/{,*/}*.html'],
             css: ['<%= config.dist %>/styles/{,*/}*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
         imagemin: {
+            options: {
+                cache: false
+            },
             dist: {
                 files: [{
                     expand: true,
