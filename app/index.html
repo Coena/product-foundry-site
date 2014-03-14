@@ -25,6 +25,7 @@
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap.js"></script>
+        <script src="bower_components/loglevel/dist/loglevel.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -62,11 +63,11 @@
             <div id="nav-scroll">
                 <nav id="nav-home">
                     <ul class="nav nav-pills">
-                        <li><a id="nav-values" href="#">Our values</a></li>
-                        <li><a id="nav-change" href="#">Profound change</a></li>
-                        <li><a id="nav-background" href="#">What we do</a></li>
-                        <li><a id="nav-portfolio" href="#">Portfolio</a></li>
-                        <li><a id="nav-contact" href="#">Get in touch</a></li>
+                        <li><a id="nav-values" rel="Our values" href="#">Our values</a></li>
+                        <li><a id="nav-change" rel="Profound change" href="#">Profound change</a></li>
+                        <li><a id="nav-background" rel="Background" href="#">What we do</a></li>
+                        <li><a id="nav-portfolio" rel="Portfolio" href="#">Portfolio</a></li>
+                        <li><a id="nav-contact" rel="Contact" href="#">Get in touch</a></li>
                     </ul>
                 </nav>
             </div>
@@ -74,6 +75,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/analytics.js"></script>
+        <script src="scripts/track.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

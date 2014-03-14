@@ -66,6 +66,14 @@ module.exports = function (grunt) {
             gruntfile: {
                 files: ['Gruntfile.js']
             },
+            coffee: {
+                files: ['<%= config.app %>/scripts/{,*/}*.coffee'],
+                tasks: ['coffee:dist']
+            },
+            coffeeTest: {
+                files: ['test/spec/{,*/}*.coffee'],
+                tasks: ['coffee:test']
+            },
             compass: {
                 files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server', 'autoprefixer']
@@ -81,6 +89,7 @@ module.exports = function (grunt) {
                 files: [
                     '<%= config.app %>/{,*/}*.html',
                     '.tmp/styles/{,*/}*.css',
+                    '.tmp/scripts/{,*/}*.js',
                     '<%= config.app %>/images/{,*/}*'
                 ]
             }
@@ -158,6 +167,30 @@ module.exports = function (grunt) {
                     run: true,
                     urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
                 }
+            }
+        },
+
+        // Compiles Coffee script
+        coffee: {
+            dist: {
+                files: [{
+                    // rather than compiling multiple files here you should
+                    // require them into your main .coffee file
+                    expand: true,
+                    cwd: '<%= config.app %>/scripts',
+                    src: '{,*/}*.coffee',
+                    dest: '.tmp/scripts',
+                    ext: '.js'
+                }]
+            },
+            test: {
+                files: [{
+                    expand: true,
+                    cwd: 'test/spec',
+                    src: '{,*/}*.coffee',
+                    dest: '.tmp/spec',
+                    ext: '.js'
+                }]
             }
         },
 
@@ -395,6 +428,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
+            'coffee:dist',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -418,12 +452,14 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'connect:test',
+            'coffee',
             'mocha'
         ]);
     });
 
     grunt.registerTask('build', [
         'clean:dist',
+        'coffee',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
