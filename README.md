@@ -5,7 +5,7 @@ Business elements default backend.
 
 # Core technologies
 
-* [Yeoman](http://yeoman.io/) - Scaffolding tool for modern webapps.
+* [Yeoman](http://yeoman.io/) - Scaffolding tool for modern web applications.
 * [Grunt](http://gruntjs.com/) - JavaScript task runner.
 * [Bower](http://bower.io/) - A package manager for the web.
 * [Modernizr](http://modernizr.com/) - Detects HTML5 and CSS3 features in the browser.
