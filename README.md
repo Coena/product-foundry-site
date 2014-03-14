@@ -1,8 +1,6 @@
 Product Foundry website
 =======================
 
-Business elements default backend.
-
 # Core technologies
 
 * [Yeoman](http://yeoman.io/) - Scaffolding tool for modern web applications.
