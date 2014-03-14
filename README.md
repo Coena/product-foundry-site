@@ -111,7 +111,7 @@ git clone git@github.com:Coena/product-foundry-site.git
 Less optimal, will ask for GitHub username/password
 
 ```bash
-git clone git@github.com:Coena/product-foundry-site.git
+git clone https://github.com/Coena/product-foundry-site.git
 ```
 
 Next, cd to the newly checked out folder
