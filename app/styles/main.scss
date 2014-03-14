@@ -2,6 +2,15 @@
 // endbower
 @import 'twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap';
 
+@import "compass/css3";
+
+@font-face {
+  font-family: 'Glegoo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/glegoo.woff) format('woff');
+}
+
 $base-url-assets: "/";
 $base-url-img: "#{$base-url-assets}images/";
 
