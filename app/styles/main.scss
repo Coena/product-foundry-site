@@ -13,6 +13,12 @@ html, body {
   font-family: Glegoo, serif;
 }
 
+#home {
+  height: 100%;
+  overflow:hidden;
+  position: relative;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -62,36 +68,49 @@ html, body {
   height: 210px;
 }
 
-#nav-home {
-  display: table;
+#nav-scroll {
+  margin: auto;
   position: absolute;
   height: 100%;
   padding: 0px;
-  margin: 0px;
   width: 50%;
   top: 0px;
   right: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#nav-home {
+  display: table;
+  position: relative;
+  height: 100%;
 
   ul {
     padding: 52px 0px 0px 120px;
     display: table-cell;
     vertical-align: middle;
+    overflow-y: auto;
+    overflow-x: hidden;
 
-    li a {
-      width: 90px;
-      height: 120px;
+    li {
+      padding-bottom: 10px;
 
-      padding: 82px 0px 10px 0px;
-      text-align: center;
-      color: #666;
+      a {
+        width: 90px;
+        height: 120px;
 
-      background-size: 56px;
-      background-position: center top;
-      background-repeat: no-repeat;
+        padding: 82px 0px 10px 0px;
+        text-align: center;
+        color: #888;
 
-      &:hover {
-        background-color: transparent;
-        color: #222;
+        background-size: 56px;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-color: transparent;
+          color: #222;
+        }
       }
     }
   }
