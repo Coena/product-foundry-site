@@ -39,6 +39,8 @@ html, body {
   padding: 0px;
   margin: 0px;
   width: 50%;
+  left: 0%;
+  position: absolute;
 
   .pf-intro {
     width: 100%;
@@ -71,6 +73,7 @@ html, body {
   right: 0px;
   width: 235px;
   padding-left: 10px;
+  z-index: 1000;
 }
 
 #nav-scroll {
@@ -83,15 +86,20 @@ html, body {
   right: 0px;
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 100;
 }
 
 #nav-home {
+  width: 100%;
   display: table;
   position: relative;
   height: 100%;
+  margin-left: 120px;
+  background-color: #f9f9fb;
+  z-index: 10;
 
   ul {
-    padding: 52px 0px 0px 120px;
+    padding: 52px 0px 0px 0px;
     display: table-cell;
     vertical-align: middle;
     overflow-y: auto;
@@ -159,7 +167,33 @@ html, body {
       background-image: url("#{$base-url-img}blue-hover.svg");
     }
   }
-
 }
 
+#values {
+  margin: auto 30px auto 20px;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  padding-bottom: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 51px;
+  top: 0px;
+  right: -20%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
+  margin-left: 80px;
+  margin-right: 0px;
+  box-shadow: -2px 0px 20px #888888;
+
+  h1 {
+    text-align: center;
+    line-height: 72px;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
 
