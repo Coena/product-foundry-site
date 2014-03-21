@@ -94,7 +94,6 @@ section {
   display: table;
   position: relative;
   height: 100%;
-  margin-left: 120px;
   z-index: 10;
 
   ul {
@@ -126,8 +125,10 @@ section {
       }
     }
   }
+}
 
-  #nav-values {
+nav {
+  .nav-values {
     background-image: url("#{$base-url-img}red.svg");
 
     &:hover {
@@ -135,7 +136,7 @@ section {
     }
   }
 
-  #nav-change {
+  .nav-change {
     background-image: url("#{$base-url-img}orange.svg");
 
     &:hover {
@@ -143,7 +144,7 @@ section {
     }
   }
 
-  #nav-background {
+  .nav-background {
     background-image: url("#{$base-url-img}green.svg");
 
     &:hover {
@@ -151,7 +152,7 @@ section {
     }
   }
 
-  #nav-portfolio {
+  .nav-portfolio {
     background-image: url("#{$base-url-img}purple.svg");
 
     &:hover {
@@ -159,7 +160,7 @@ section {
     }
   }
 
-  #nav-contact {
+  .nav-contact {
     background-image: url("#{$base-url-img}blue.svg");
 
     &:hover {
