@@ -27,7 +27,6 @@ html, body {
   padding: 0.2em 0;
 }
 
-
 section {
   margin: 0;
   padding: 0;
@@ -36,98 +35,30 @@ section {
   position: relative;
 }
 
-#pf-intro-container {
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-  width: 50%;
-  left: 0%;
-  position: absolute;
-  background: url("#{$base-url-img}/home1.jpg") center center; background-size: cover;
+nav {
+  position: relative;
   display: table;
-  box-shadow: inset 0px 0px 240px 80px rgba(0,0,0,0.6);
-
-  blockquote {
-    color: #fff;
-    border: 0px;
-    padding-right: 120px;
-    padding-left: 60px;
-    display: table-cell;
-    vertical-align: middle;
-    text-shadow: 1px 2px 8px #000;
-    font-size: 1.3em;
-    background: url("#{$base-url-img}/pattern.svg") center center; background-size: 63px 63px;
-
-    footer {
-      color: #fff;
-    }
-  }
-}
-
-#pf-logo {
-  margin: auto;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  width: 30%;
-  max-width: 235px;
-  padding-left: 10px;
-  z-index: 1000;
-}
-
-#nav-scroll {
-  margin: auto;
-  position: absolute;
   height: 100%;
-  padding: 0px;
-  width: 50%;
-  top: 0px;
-  right: 0px;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 100;
-}
-
-#nav-home {
-  display: table;
-  position: relative;
-  height: 100%;
-  z-index: 10;
 
   ul {
-    padding: 52px 0px 0px 0px;
     display: table-cell;
     vertical-align: middle;
     overflow-y: auto;
     overflow-x: hidden;
+  }
 
-    li {
-      padding-bottom: 10px;
+  a {
+    color: #888;
 
-      a {
-        width: 90px;
-        height: 120px;
-
-        padding: 82px 0px 10px 0px;
-        text-align: center;
-        color: #888;
-
-        background-size: 55px;
-        background-position: center top;
-        background-repeat: no-repeat;
-
-        &:hover {
-          background-color: transparent;
-          color: #222;
-        }
-      }
+    &:hover {
+      background-color: transparent !important;
+      color: #222;
     }
   }
-}
 
-nav {
   .nav-values {
     background-image: url("#{$base-url-img}red.svg");
 
@@ -169,34 +100,150 @@ nav {
   }
 }
 
-#pf-values-container {
-  position: absolute;
-  right: 440px;
-  height: 100%;
-  margin-left: 120px;
-  padding: 10%;
-  background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
-  box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.1);
+.nav-horizontal {
+  ul {
+    padding: 52px 0px 0px 0px;
+
+    li {
+      padding-bottom: 10px;
+
+      a {
+        width: 90px;
+        height: 120px;
+
+        padding: 82px 0px 10px 0px;
+        text-align: center;
+
+        background-size: 55px;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
 
-h1 {
-  text-align: center;
-  line-height: 72px;
+.nav-vertical {
+  ul {
+    padding: 52px 0px 0px 0px;
+
+    li {
+      padding-bottom: 10px;
+      clear: both;
+
+      a {
+        width: 200px;
+        padding: 20px 0px 0px 65px;
+        background-size: 55px;
+        background-position: left 24px;
+        background-repeat: no-repeat;
+        line-height: 55px;
+      }
+    }
+  }
 }
 
-p {
-  text-align: justify;
-}
-
-#pf-logo-content {
+#pf-logo {
   margin: auto;
   position: absolute;
   top: 0px;
   bottom: 0px;
-  left: 30px;
-  width: 175px;
+  left: 0px;
+  right: 0px;
+  width: 30%;
   max-width: 235px;
   padding-left: 10px;
   z-index: 1000;
 }
+
+#home {
+  #pf-intro-container {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
+    left: 0%;
+    position: absolute;
+    background: url("#{$base-url-img}/home1.jpg") center center; background-size: cover;
+    display: table;
+    box-shadow: inset 0px 0px 240px 80px rgba(0,0,0,0.6);
+
+    blockquote {
+      color: #fff;
+      border: 0px;
+      padding-right: 120px;
+      padding-left: 60px;
+      display: table-cell;
+      vertical-align: middle;
+      text-shadow: 1px 2px 8px #000;
+      font-size: 1.3em;
+      background: url("#{$base-url-img}/pattern.svg") center center; background-size: 63px 63px;
+
+      footer {
+        color: #fff;
+      }
+    }
+  }
+
+  .nav-container {
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    padding: 0px;
+    padding-left: 100px;
+    width: 50%;
+    top: 0px;
+    right: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+#values {
+  #pf-values-container {
+    position: absolute;
+    right: 375px;
+    height: 100%;
+    margin-left: 120px;
+    padding: 10%;
+    background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
+    box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    line-height: 72px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  #pf-logo-content {
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 30px;
+    width: 175px;
+    max-width: 235px;
+    padding-left: 10px;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    padding: 0px;
+    top: 0px;
+    right: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .nav-values {
+    background-image: url("#{$base-url-img}red-hover.svg");
+  }
+}
+
 
