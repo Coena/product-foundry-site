@@ -33,7 +33,6 @@ section {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  max-width: 1280px;
   position: relative;
 }
 
@@ -96,7 +95,6 @@ section {
   position: relative;
   height: 100%;
   margin-left: 120px;
-  background-color: #f9f9fb;
   z-index: 10;
 
   ul {
@@ -171,8 +169,9 @@ section {
 }
 
 #pf-values-container {
+  position: absolute;
+  right: 440px;
   height: 100%;
-  width: 50%;
   margin-left: 120px;
   padding: 10%;
   background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
