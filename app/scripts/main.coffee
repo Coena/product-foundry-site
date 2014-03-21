@@ -16,3 +16,7 @@ $ ->
     event.preventDefault()
     $('body').animate({scrollTop:$($(this).attr('href')).offset().top + 1}, 500)
   )
+
+  window.onscroll = () ->
+    if (window.pageYOffset > $('#home').height())
+      log.error('ok')

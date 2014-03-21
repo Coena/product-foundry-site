@@ -198,6 +198,43 @@ nav {
   }
 }
 
+#contents {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+
+  #pf-logo-content {
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 30px;
+    width: 185px;
+    padding-left: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    z-index: 1000;
+
+    background: url("#{$base-url-img}/logoindex.svg") no-repeat center center; background-size: 185px 185px;
+  }
+
+  .nav-container {
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    padding: 0px;
+    top: 0px;
+    right: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .nav-values {
+    background-image: url("#{$base-url-img}red-hover.svg");
+  }
+}
+
 #values {
   #pf-values-container {
     position: absolute;
@@ -216,37 +253,6 @@ nav {
 
   p {
     text-align: justify;
-  }
-
-  #pf-logo-content {
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 30px;
-    width: 185px;
-    padding-left: 10px;
-    font-size: 0px;
-    line-height: 0px;
-    z-index: 1000;
-
-    background: url("#{$base-url-img}/logoindex.svg") no-repeat center center; background-size: 185px 185px;
-
-  }
-
-  .nav-container {
-    margin: auto;
-    position: absolute;
-    height: 100%;
-    padding: 0px;
-    top: 0px;
-    right: 200px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .nav-values {
-    background-image: url("#{$base-url-img}red-hover.svg");
   }
 }
 
