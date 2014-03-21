@@ -204,6 +204,15 @@ nav {
   height: 100%;
   position: relative;
 
+  #controls {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+  }
+
   #pf-logo-content {
     margin: auto;
     position: absolute;

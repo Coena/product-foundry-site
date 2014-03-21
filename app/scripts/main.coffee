@@ -19,4 +19,6 @@ $ ->
 
   window.onscroll = () ->
     if (window.pageYOffset > $('#home').height())
-      log.error('ok')
+      $('#controls').css('position', 'fixed')
+    else
+      $('#controls').css('position', 'absolute')
