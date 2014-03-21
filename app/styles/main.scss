@@ -12,19 +12,12 @@
 
 $base-url-assets: "/";
 $base-url-img: "#{$base-url-assets}images/";
+$bg-color: rgb(236, 236, 239);
 
 html, body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   background-color: #f9f9fb;
   font-family: Glegoo, serif;
-}
-
-#home {
-  height: 100%;
-  overflow:hidden;
-  position: relative;
 }
 
 .browsehappy {
@@ -34,6 +27,16 @@ html, body {
   padding: 0.2em 0;
 }
 
+
+section {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  max-width: 1280px;
+  position: relative;
+}
+
 #pf-intro-container {
   height: 100%;
   padding: 0px;
@@ -41,13 +44,9 @@ html, body {
   width: 50%;
   left: 0%;
   position: absolute;
-
-  .pf-intro {
-    width: 100%;
-    height: 100%;
-    display: table;
-    box-shadow: inset 0px 0px 240px 80px rgba(0,0,0,0.4);
-  }
+  background: url("#{$base-url-img}/home1.jpg") center center; background-size: cover;
+  display: table;
+  box-shadow: inset 0px 0px 240px 80px rgba(0,0,0,0.6);
 
   blockquote {
     color: #fff;
@@ -58,6 +57,7 @@ html, body {
     vertical-align: middle;
     text-shadow: 1px 2px 8px #000;
     font-size: 1.3em;
+    background: url("#{$base-url-img}/pattern.svg") center center; background-size: 63px 63px;
 
     footer {
       color: #fff;
@@ -72,7 +72,8 @@ html, body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  width: 235px;
+  width: 30%;
+  max-width: 235px;
   padding-left: 10px;
   z-index: 1000;
 }
@@ -91,7 +92,6 @@ html, body {
 }
 
 #nav-home {
-  width: 100%;
   display: table;
   position: relative;
   height: 100%;
@@ -170,31 +170,33 @@ html, body {
   }
 }
 
-#values {
-  margin: auto 30px auto 20px;
-  position: absolute;
+#pf-values-container {
   height: 100%;
   width: 50%;
-  padding-bottom: 0px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 51px;
-  top: 0px;
-  right: -20%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  margin-left: 120px;
+  padding: 10%;
   background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
-  margin-left: 80px;
-  margin-right: 0px;
-  box-shadow: -2px 0px 20px #888888;
+  box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.1);
+}
 
-  h1 {
-    text-align: center;
-    line-height: 72px;
-  }
+h1 {
+  text-align: center;
+  line-height: 72px;
+}
 
-  p {
-    text-align: justify;
-  }
+p {
+  text-align: justify;
+}
+
+#pf-logo-content {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 30px;
+  width: 175px;
+  max-width: 235px;
+  padding-left: 10px;
+  z-index: 1000;
 }
 

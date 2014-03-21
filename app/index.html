@@ -33,14 +33,10 @@
 
         <section id="home">
             <div id="pf-intro-container" class="jumbotron">
-                <div class="pf-intro" style="background: url('images/home1.jpg') center center; background-size: cover">
-                    <div class="pf-intro" style="background: url('images/pattern.svg') center center; background-size: 63px 63px">
-                        <blockquote class="blockquote-reverse">
-                            "Organic order is achieved when there is a perfect balance between the needs of the parts and the needs of the whole."
-                            <footer><cite>Christopher Alexander</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
+                <blockquote class="blockquote-reverse">
+                    "Organic order is achieved when there is a perfect balance between the needs of the parts and the needs of the whole."
+                    <footer><cite>Christopher Alexander</cite></footer>
+                </blockquote>
             </div>
 
             <img id="pf-logo" src="images/logoindex.svg"/>
@@ -48,17 +44,21 @@
             <div id="nav-scroll">
                 <nav id="nav-home">
                     <ul class="nav nav-pills">
-                        <li><a id="nav-values" rel="Our values" href="#">Our values</a></li>
-                        <li><a class="coming-soon" id="nav-change" rel="Profound change" href="#">Profound change</a></li>
-                        <li><a class="coming-soon" id="nav-background" rel="Background" href="#">What we do</a></li>
-                        <li><a class="coming-soon" id="nav-portfolio" rel="Portfolio" href="#">Portfolio</a></li>
-                        <li><a class="coming-soon" id="nav-contact" rel="Contact" href="#">Get in touch</a></li>
+                        <li><a id="nav-values" rel="Our values" href="#values">Our values</a></li>
+                        <li><a id="nav-change" rel="Profound change" href="#change">Profound change</a></li>
+                        <li><a id="nav-background" rel="Background" href="#background">What we do</a></li>
+                        <li><a id="nav-portfolio" rel="Portfolio" href="#portfolio">Portfolio</a></li>
+                        <li><a id="nav-contact" rel="Contact" href="#contact">Get in touch</a></li>
                     </ul>
                 </nav>
             </div>
+        </section>
 
-            <div id="values">
-                <h1>Our values</h1>
+        <section id="values">
+            <div id="pf-values-container">
+                <header>
+                    <h1>Our values</h1>
+                </header>
                 <p>We operate from a deep conviction that today's business landscape needs profound change, and we structure
                     all of our work in terms of people, planet and profit. The method we apply to effect profound change is
                     called embodied making, the leading agile design method. We work with clients (both corporates and
@@ -70,6 +70,42 @@
                     initiatives, we work to create the foundations of a real-time business.
                 </p>
             </div>
+
+            <img id="pf-logo-content" src="images/logoindex.svg"/>
+
+            <nav id="nav-valuess">
+                <ul class="nav nav-pills">
+                    <li><a class="nav-values" rel="Our values" href="#values">Our values</a></li>
+                    <li><a class="nav-change" rel="Profound change" href="#change">Profound change</a></li>
+                    <li><a class="nav-background" rel="Background" href="#background">What we do</a></li>
+                    <li><a class="nav-portfolio" rel="Portfolio" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-contact" rel="Contact" href="#contact">Get in touch</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="change">
+            <header>
+                <h1>Profound change</h1>
+            </header>
+        </section>
+
+        <section id="background">
+            <header>
+                <h1>What we do</h1>
+            </header>
+        </section>
+
+        <section id="portfolio">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+        </section>
+
+        <section id="contact">
+            <header>
+                <h1>Get in touch</h1>
+            </header>
         </section>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
