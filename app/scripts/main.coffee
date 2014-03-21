@@ -14,7 +14,10 @@ $ ->
 
   $('nav a,.nav-home').click((event) ->
     event.preventDefault()
-    $('body').animate({scrollTop:$($(this).attr('href')).offset().top + 1}, 500)
+    target = $(this).attr('href')
+    $('body').animate({scrollTop:$(target).offset().top + 1}, 500, () ->
+      window.location.hash = target
+    )
   )
 
   window.onscroll = () ->
