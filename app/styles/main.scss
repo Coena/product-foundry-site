@@ -224,10 +224,14 @@ nav {
     top: 0px;
     bottom: 0px;
     left: 30px;
-    width: 175px;
-    max-width: 235px;
+    width: 185px;
     padding-left: 10px;
+    font-size: 0px;
+    line-height: 0px;
     z-index: 1000;
+
+    background: url("#{$base-url-img}/logoindex.svg") no-repeat center center; background-size: 185px 185px;
+
   }
 
   .nav-container {

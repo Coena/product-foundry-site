@@ -12,7 +12,7 @@ $ ->
     , 1500)
   )
 
-  $('nav a').click((event) ->
+  $('nav a,.nav-home').click((event) ->
     event.preventDefault()
     $('body').animate({scrollTop:$($(this).attr('href')).offset().top + 1}, 500)
   )
