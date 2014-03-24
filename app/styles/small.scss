@@ -1,0 +1,48 @@
+@import "variables";
+
+@media screen and (max-width: 1024px) {
+  #home {
+    #pf-intro-container {
+      width: 100%;
+
+      blockquote {
+        padding-top: 90px;
+      }
+    }
+
+    #pf-logo {
+      margin-top: 20px;
+      width: 20%;
+    }
+  }
+
+  #pf-nav, #pf-logo-content {
+    display: none;
+  }
+
+  #contents {
+    #pf-nav-content {
+      left: 10px;
+      width: 52px;
+      right: initial;
+    }
+
+    .pf-content-container {
+      padding: 60px;
+    }
+
+    .nav-vertical ul li a {
+      line-height: 40px;
+      background-size: 40px 40px;
+    }
+
+    section {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      #home {
+        box-shadow: none;
+      }
+    }
+  }
+}
