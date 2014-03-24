@@ -70,6 +70,14 @@ nav {
     }
   }
 
+  .nav-home {
+    background: url("#{$base-url-img}logoindex.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}logoindex.svg");
+    }
+  }
+
   .nav-values {
     background-image: url("#{$base-url-img}red.svg");
 
@@ -81,7 +89,7 @@ nav {
   .nav-change {
     background-image: url("#{$base-url-img}orange.svg");
 
-    &:hover {
+    &:hover,&:active {
       background-image: url("#{$base-url-img}orange-hover.svg");
     }
   }
@@ -135,7 +143,7 @@ nav {
 
 .nav-vertical {
   ul {
-    padding: 52px 0px 0px 0px;
+    padding: 0px;
 
     li {
       padding-bottom: 10px;
@@ -248,10 +256,6 @@ nav {
     right: 200px;
     overflow-y: auto;
     overflow-x: hidden;
-  }
-
-  .nav-values {
-    background-image: url("#{$base-url-img}red-hover.svg");
   }
 
   .pf-content-container {
