@@ -9,10 +9,10 @@ $ ->
     )
   )
 
-  $('body').scrollspy({ target: '#controls' })
+  $('body').scrollspy({ target: '#pf-nav-content' })
 
   window.onscroll = () ->
     if (window.pageYOffset > $('#home').height())
-      $('#controls').css('position', 'fixed')
+      $('#pf-logo-content,#pf-nav-content').css('position', 'fixed')
     else
-      $('#controls').css('position', 'absolute')
+      $('#pf-logo-content,#pf-nav-content').css('position', 'absolute')

@@ -47,7 +47,6 @@ nav {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  z-index: 100;
 
   ul {
     display: table-cell;
@@ -207,6 +206,10 @@ nav {
   z-index: 1000;
 }
 
+#pf-nav-content {
+  z-index: 1000;
+}
+
 #home {
   #pf-intro-container {
     height: 100%;
@@ -261,8 +264,6 @@ nav {
     height: 100%;
     top: 0px;
     left: 0px;
-    width: 100%;
-    z-index: 10;
   }
 
   #pf-logo-content {
