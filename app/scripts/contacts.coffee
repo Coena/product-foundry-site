@@ -3,6 +3,11 @@ $ ->
     elem = document.getElementById("contact-grid")
     grid = hex.grid(elem, { type: "businesscanvas" })
     size = hex.size(grid.elem)
+
+    log.error(hex)
+    hex.removeEvent(elem, "mousewheel", hex.mousewheel);
+    hex.removeEvent(elem, "DOMMouseScroll", hex.mousewheel);
+
     grid.reorient(size.x * 0.5, size.y * 0.5)
 
     add = (x, y, name, text) ->

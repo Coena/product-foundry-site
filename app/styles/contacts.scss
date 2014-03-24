@@ -35,11 +35,15 @@ $contacts: (
     }
 
     &.location {
-      background-image: url("http://placehold.it/100/E8117F/FFF&text=location");
+      background-image: url("#{$base-url-img}bb-landmark-cell.svg");
     }
 
     &.contact {
-      background-image: url("http://placehold.it/100/E8117F/FFF&text=contact");
+      background-image: url("#{$base-url-img}bb-mail-cell.svg");
+
+      &:hover {
+        background-image: url("#{$base-url-img}bb-mail-hover.svg");
+      }
     }
   }
 }
