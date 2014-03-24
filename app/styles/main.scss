@@ -71,10 +71,10 @@ nav {
   }
 
   .nav-home {
-    background: url("#{$base-url-img}logoindex.svg");
+    background: url("#{$base-url-img}logo.svg");
 
     &:hover {
-      background-image: url("#{$base-url-img}logoindex.svg");
+      background-image: url("#{$base-url-img}logo-hover.svg");
     }
   }
 
