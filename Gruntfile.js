@@ -17,6 +17,7 @@ module.exports = function (grunt) {
 
     // Load additional NPM tasks
     grunt.loadNpmTasks('grunt-favicons');
+    grunt.loadNpmTasks('grunt-image-resize');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -43,6 +44,22 @@ module.exports = function (grunt) {
             icons: {
                 src: '<%= config.app %>/images/favicon.png',
                 dest: '<%= config.dist %>/images/icons'
+            }
+        },
+
+        image_resize: {
+            portraits: {
+                options: {
+                    width: 200,
+                    height: 200,
+                    overwrite: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>/images/portraits',
+                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    dest: '.tmp/images/portraits/'
+                }]
             }
         },
 
@@ -296,12 +313,20 @@ module.exports = function (grunt) {
                 cache: false
             },
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.dist %>/images'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.app %>/images',
+                        src: '*.{gif,jpeg,jpg,png}',
+                        dest: '<%= config.dist %>/images'
+                    },
+                    {
+                        expand: true,
+                        cwd: '.tmp/images/portraits',
+                        src: '*.{gif,jpeg,jpg,png}',
+                        dest: '<%= config.dist %>/images/portraits'
+                    }
+                ]
             }
         },
 
@@ -429,6 +454,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'coffee:dist',
+            'image_resize:portraits',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -461,6 +487,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'coffee',
         'useminPrepare',
+        'image_resize:portraits',
         'concurrent:dist',
         'autoprefixer',
         'concat',
@@ -480,4 +507,10 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+
+    grunt.registerTask('resize', [
+        'image_resize:portraits',
+        'imagemin:dist',
+    ]);
+
 };
