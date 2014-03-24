@@ -9,6 +9,8 @@ $ ->
     )
   )
 
+  $('body').scrollspy({ target: '#controls' })
+
   window.onscroll = () ->
     if (window.pageYOffset > $('#home').height())
       $('#controls').css('position', 'fixed')

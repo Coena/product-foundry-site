@@ -54,6 +54,39 @@ nav {
     vertical-align: middle;
     overflow-y: auto;
     overflow-x: hidden;
+
+    &.nav-pills li.active a {
+      color: inherit;
+      background-color: inherit;
+
+      &:hover {
+        color: inherit;
+      }
+
+      &.nav-home {
+        background-image: url("#{$base-url-img}logo-hover.svg");
+      }
+
+      &.nav-values {
+        background-image: url("#{$base-url-img}red-hover.svg");
+      }
+
+      &.nav-change {
+        background-image: url("#{$base-url-img}orange-hover.svg");
+      }
+
+      &.nav-background {
+        background-image: url("#{$base-url-img}green-hover.svg");
+      }
+
+      &.nav-portfolio {
+        background-image: url("#{$base-url-img}purple-hover.svg");
+      }
+
+      &.nav-contact {
+        background-image: url("#{$base-url-img}blue-hover.svg");
+      }
+    }
   }
 
   a {
