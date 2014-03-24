@@ -35,6 +35,7 @@ section {
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
+    box-shadow: 0px 0px 46px 0px rgba(23, 40, 93, 0.2);
   }
 
   min-height: 100%;
@@ -260,7 +261,6 @@ nav {
 
   .pf-content-container {
     padding: 100px;
-    box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.1);
   }
 
   h1 {
@@ -275,24 +275,20 @@ nav {
   section {
     margin-left: 125px;
     margin-right: 375px;
+
+    box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.2);
   }
 }
 
 #values {
-  .pf-content-container {
-    background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
-  }
+  background: url("#{$base-url-img}/pattern-light.svg") center center; background-size: 63px 63px;
 }
-
-
 
 #change {
   color: $bg-color;
   text-shadow: 1px 2px 8px #000;
   background: url("#{$base-url-img}/tea.jpg"); background-size: cover;
-
-  .pf-content-container {
-  }
+  background-position: center center;
 }
 
 
