@@ -33,5 +33,13 @@ $contacts: (
         background-image: url("#{$base-url-img}portraits/#{$contact}.png");
       }
     }
+
+    &.location {
+      background-image: url("http://placehold.it/100&text=location");
+    }
+
+    &.contact {
+      background-image: url("http://placehold.it/100&text=contact");
+    }
   }
 }
