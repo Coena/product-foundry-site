@@ -454,7 +454,6 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'coffee:dist',
-            'image_resize:portraits',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -507,10 +506,4 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
-
-    grunt.registerTask('resize', [
-        'image_resize:portraits',
-        'imagemin:dist',
-    ]);
-
 };
