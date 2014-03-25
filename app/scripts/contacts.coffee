@@ -28,6 +28,7 @@ $ ->
     add(-2, 1, "andre")
     add(-3, 2, "hung")
     add(-4, 2, "indranil")
+    add(-5, 2, "olaf")
 
     add(1, -2, "location", "Romania")
     add(1, -3, "contact")
@@ -45,6 +46,8 @@ $ ->
 
     add(2, 0, "location", "India")
     add(3, 0, "contact")
+    add(4, 0, "piu")
+    add(4, -1, "aruna")
 
 
 
