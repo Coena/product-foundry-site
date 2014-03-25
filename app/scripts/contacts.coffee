@@ -1,10 +1,17 @@
 $ ->
   contactgrid = (hex) ->
     elem = document.getElementById("contact-grid")
+
+    # Really ugly way to prevent mouse wheel events
+    hex.oldAddEvent = hex.addEvent
+    hex.addEvent = (elem, type, handler) ->
+      if (type != "mousewheel" && type != "DOMMouseScroll")
+        hex.oldAddEvent(elem, type, handler)
+
     grid = hex.grid(elem, { type: "businesscanvas" })
     size = hex.size(grid.elem)
 
-    log.error(hex)
+
     hex.removeEvent(elem, "mousewheel", hex.mousewheel);
     hex.removeEvent(elem, "DOMMouseScroll", hex.mousewheel);
 
@@ -51,7 +58,9 @@ $ ->
 
 
 
-  contactgrid(window.hex)
+  contactgrid(hex.extend(window.hex,
+    mouseover = () ->
+  ))
 
 
 
