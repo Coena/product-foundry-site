@@ -28,14 +28,14 @@ $ ->
 
       grid.root.appendChild(cell[0])
 
-    add(-2, 1, "location", "Netherlands")
-    add(-3, 1, "contact")
-    add(-2, 0, "sergej")
-    add(-1, 0, "job")
-    add(-1, 1, "andre")
-    add(-2, 2, "hung")
-    add(-3, 2, "indranil")
-    add(-4, 2, "olaf")
+    add(-1, 1, "location", "Netherlands")
+    add(-2, 1, "contact")
+    add(-1, 0, "sergej")
+    add(0, 0, "job")
+    add(0, 1, "andre")
+    add(-1, 2, "hung")
+    add(-2, 2, "indranil")
+    add(-3, 2, "olaf")
 
     add(2, -2, "location", "Romania")
     add(2, -3, "contact")
@@ -48,13 +48,13 @@ $ ->
     add(3, -3, "raluca")
 
     add(1, 3, "location", "Germany")
-    add(2, 3, "contact")
+    add(0, 3, "contact")
     add(1, 2, "michael")
 
     add(3, 0, "location", "India")
-    add(4, 0, "contact")
-    add(5, 0, "piu")
-    add(5, -1, "aruna")
+    add(3, 1, "contact")
+    add(2, 0, "piu")
+    add(4, -1, "aruna")
 
 
 
