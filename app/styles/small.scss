@@ -57,13 +57,13 @@
       padding-bottom: 0px;
     }
 
-    div.jumbotron {
-      padding-left: 0px;
-      padding-right: 0px;
+    header,div.jumbotron {
+      padding-left: 25px;
+      padding-right: 75px;
 
-      p {
-        padding-left: 25px;
-        padding-right: 75px;
+      p,h3 {
+        padding-left: 0px;
+        padding-right: 0px;
       }
     }
   }
