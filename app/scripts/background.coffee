@@ -21,5 +21,5 @@ $ ->
       else
         elem.css('background-image', '')
 
-      container.animate({'height': targetHeight}, 500)
+      container.animate({'height': targetHeight}, 500, () -> $('body').scrollspy('refresh'))
     )

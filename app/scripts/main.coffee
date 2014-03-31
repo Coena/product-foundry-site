@@ -11,7 +11,6 @@ $ ->
 
   $('body').scrollspy({ target: '#pf-nav-content' })
 
-
   isFixedControls = () -> window.pageYOffset > $('#home').height()
 
   fixedControls = isFixedControls()
