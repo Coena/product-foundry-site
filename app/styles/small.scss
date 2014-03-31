@@ -49,4 +49,19 @@
       }
     }
   }
+
+  #background {
+    .pf-content-container {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+
+    div.jumbotron {
+      p {
+      padding-left: 50px;
+      padding-right: 50px;
+      }
+    }
+  }
 }
