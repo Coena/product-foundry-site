@@ -13,11 +13,12 @@ $ ->
     grid = hex.grid(elem, { type: "businesscanvas" })
     size = hex.size(grid.elem)
 
+    centerGrid = () ->
+      size = hex.size(grid.elem)
+      grid.reorient(size.x * 0.5, size.y * 0.5)
 
-    hex.removeEvent(elem, "mousewheel", hex.mousewheel);
-    hex.removeEvent(elem, "DOMMouseScroll", hex.mousewheel);
-
-    grid.reorient(size.x * 0.5, size.y * 0.5)
+    centerGrid()
+    window.onresize = () -> centerGrid()
 
     offsetX = -1
     offsetY = 1
