@@ -327,13 +327,47 @@ nav {
     padding-bottom: 0px;
   }
 
-  a {
+  div.jumbotron {
     background-position: center center;
     display: block;
     text-shadow: 1px 2px 8px #000;
 
+    .bg-full-container {
+      overflow: hidden;
+    }
+
     &:hover {
       text-decoration: none;
+    }
+
+    margin-bottom: 0px;
+    color: $bg-color;
+    min-height: 250px;
+
+    p,h2,h3 {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 18px;
+      padding-left: 100px;
+      padding-top: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      padding-top: 7px;
+    }
+
+    a {
+      color: $bg-color;
+      text-decoration: underline;
     }
   }
 
@@ -358,22 +392,6 @@ nav {
 
     &:hover {
       background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
-    }
-  }
-
-  .jumbotron {
-    margin-bottom: 0px;
-    color: $bg-color;
-    height: 250px;
-
-    h2 {
-      text-align: center;
-    }
-    p {
-      padding-left: 100px;
-      padding-right: 100px;
-      font-size: 14px;
-      padding-top: 7px;
     }
   }
 }
