@@ -31,19 +31,18 @@ module.exports = function (grunt) {
 
         favicons: {
             options: {
-                trueColor: false,
-                precomposed: false,
+                trueColor: true,
                 appleTouchBackgroundColor: '#ffffff',
                 coast: true,
                 windowsTile: true,
                 tileBlackWhite: false,
                 tileColor: '#00259a',
                 html: '<%= config.dist %>/index.html',
-                HTMLPrefix: '/images/icons/'
+                HTMLPrefix: '/'
             },
             icons: {
                 src: '<%= config.app %>/images/favicon.png',
-                dest: '<%= config.dist %>/images/icons'
+                dest: '<%= config.dist %>/'
             }
         },
 
