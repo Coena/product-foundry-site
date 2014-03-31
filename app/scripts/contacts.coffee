@@ -2,10 +2,12 @@ $ ->
   contactgrid = (hex) ->
     elem = document.getElementById("contact-grid")
 
+    ignoreEvents = ['mousewheel', 'DOMMouseScroll', 'panstart', 'panmove', 'panend']
+
     # Really ugly way to prevent mouse wheel events
     hex.oldAddEvent = hex.addEvent
     hex.addEvent = (elem, type, handler) ->
-      if (type != "mousewheel" && type != "DOMMouseScroll")
+      if (!type in ignoreEvents)
         hex.oldAddEvent(elem, type, handler)
 
     grid = hex.grid(elem, { type: "businesscanvas" })
