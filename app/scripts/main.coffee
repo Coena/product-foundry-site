@@ -11,8 +11,18 @@ $ ->
 
   $('body').scrollspy({ target: '#pf-nav-content' })
 
+
+  isFixedControls = () -> window.pageYOffset > $('#home').height()
+
+  fixedControls = isFixedControls()
+
   window.onscroll = () ->
-    if (window.pageYOffset > $('#home').height())
-      $('#pf-logo-content,#pf-nav-content').css('position', 'fixed')
-    else
-      $('#pf-logo-content,#pf-nav-content').css('position', 'absolute')
+    shouldFixControls = isFixedControls()
+
+    if (fixedControls != shouldFixControls)
+      fixedControls = shouldFixControls
+
+      if (shouldFixControls)
+        $('#pf-logo-content,#pf-nav-content').css('position', 'fixed')
+      else
+        $('#pf-logo-content,#pf-nav-content').css('position', 'absolute')
