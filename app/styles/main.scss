@@ -15,7 +15,7 @@
 
 html, body {
   height: 100%;
-  background-color: #f9f9fb;
+  background-color: $bg-color;
   font-family: Glegoo, serif;
 }
 
@@ -320,6 +320,62 @@ nav {
 
 #background {
   background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
+
+  .pf-content-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  a {
+    background-position: center center;
+    display: block;
+    text-shadow: 1px 2px 8px #000;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  #bg-research {
+    background-image: url("#{$base-url-img}research.jpg"); background-size: cover;
+
+    &:hover {
+      background-image: url("#{$base-url-img}research-hover.jpg"); background-size: cover;
+    }
+  }
+
+  #bg-practice {
+    background-image: url("#{$base-url-img}practice.jpg"); background-size: cover;
+
+    &:hover {
+      background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover;
+    }
+  }
+
+  #bg-method{
+    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+
+    &:hover {
+      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
+    }
+  }
+
+  .jumbotron {
+    margin-bottom: 0px;
+    color: $bg-color;
+    height: 250px;
+
+    h2 {
+      text-align: center;
+    }
+    p {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: 14px;
+      padding-top: 7px;
+    }
+  }
 }
 
 #portfolio {
@@ -331,7 +387,7 @@ nav {
 
 #contact {
   header {
-    color: white;
+    color: $bg-color;
     text-shadow: 1px 2px 8px #000;
   }
 
