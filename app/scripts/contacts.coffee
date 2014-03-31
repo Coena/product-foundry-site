@@ -64,6 +64,7 @@ $ ->
     add(3, 1, "contact")
     add(2, 0, "piu")
     add(4, -1, "aruna")
+    add(2, 1, "sanjay")
 
 
 
