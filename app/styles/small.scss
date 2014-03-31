@@ -58,9 +58,12 @@
     }
 
     div.jumbotron {
+      padding-left: 0px;
+      padding-right: 0px;
+
       p {
-      padding-left: 50px;
-      padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 75px;
       }
     }
   }
