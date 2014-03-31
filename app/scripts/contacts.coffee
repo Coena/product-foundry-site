@@ -17,7 +17,13 @@ $ ->
 
     grid.reorient(size.x * 0.5, size.y * 0.5)
 
+    offsetX = -1
+    offsetY = 1
+
     add = (x, y, name, text) ->
+      x = x + offsetX
+      y = y + offsetY
+
       pos = grid.screenpos(x, y);
       cell = $('<div>').addClass('cell').addClass(name)
       cell.css('left', pos.x + "px")

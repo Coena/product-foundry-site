@@ -287,7 +287,7 @@ nav {
   }
 
   .pf-content-container {
-    padding: 100px;
+    padding: 40px 100px 100px;
   }
 
   h1 {
@@ -327,5 +327,19 @@ nav {
   text-shadow: 1px 2px 8px #000;
   background: url("#{$base-url-img}book.jpg"); background-size: cover;
   background-position: center center;
+}
+
+#contact {
+  header {
+    color: white;
+    text-shadow: 1px 2px 8px #000;
+  }
+
+  .pf-content-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+  }
 }
 
