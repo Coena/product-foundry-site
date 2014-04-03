@@ -105,10 +105,15 @@
     box-shadow: none;
 
     .pf-content-container {
+      background: #e3e3e9;
+      background-size: 78px 135px;
+      background-image: url('#{$base-url-img}back.svg');
+      background-position: center center;
+
       position: absolute;
+      height: auto;
       left: 0px;
       right: 0px;
-      height: 0px;
     }
 
     #contact-grid {

@@ -404,6 +404,7 @@ nav {
 }
 
 #contact {
+
   header {
     color: $bg-color;
     text-shadow: 1px 2px 8px #000;
@@ -425,7 +426,6 @@ nav {
   }
 
   article {
-    background-color: $bg-color;
     width: 50%;
     float: left;
 
@@ -441,7 +441,8 @@ nav {
   }
 
   a {
-    color: #888;
+    color: #333;
+    text-decoration: underline;
   }
 }
 
