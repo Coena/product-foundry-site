@@ -82,7 +82,7 @@ $contacts: (
     display: none;
   }
 
-  article {
+  article,.popover {
     width: 50%;
     float: left;
 
@@ -94,6 +94,12 @@ $contacts: (
       text-align: left;
       font-size: 20px;
       line-height: 24px;
+      margin: 0px;
+
+    }
+
+    small {
+      font-size: 12px;
     }
   }
 
