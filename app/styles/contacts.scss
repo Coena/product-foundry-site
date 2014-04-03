@@ -2,7 +2,7 @@
 
 $contacts: (
   'sergej', 'job', 'andre', 'hung', 'indranil', 'olaf',
-  'andreea', 'marian', 'adi', 'daniel', 'teodora', 'marius', 'raluca',
+  'andreea', 'marian', 'adrian', 'daniel', 'teodora', 'marius', 'raluca',
   'piu', 'aruna', 'sanjay',
   'michael'
 );
@@ -15,6 +15,16 @@ $contacts: (
   background-size: 78px 135px;
   background-image: url('#{$base-url-img}back.svg');
   box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.2);
+
+  .popover {
+    min-width: 350px;
+    max-width: 350px;
+    z-index: 1000;
+
+    p {
+      text-align: left;
+    }
+  }
 
   div.cell {
     width: 78px;
