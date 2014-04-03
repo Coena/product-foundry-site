@@ -60,3 +60,45 @@ $contacts: (
     }
   }
 }
+
+#contact {
+  header {
+    color: $bg-color;
+    text-shadow: 1px 2px 8px #000;
+  }
+
+  .pf-content-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+  }
+
+  #contact-grid {
+    display: none;
+  }
+
+  article.person {
+    display: none;
+  }
+
+  article {
+    width: 50%;
+    float: left;
+
+    &:nth-child(even) {
+      clear: left;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  a {
+    color: #333;
+    text-decoration: underline;
+  }
+}

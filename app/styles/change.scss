@@ -1,0 +1,8 @@
+@import 'variables';
+
+#change {
+  color: $bg-color;
+  text-shadow: 1px 2px 8px #000;
+  background: url("#{$base-url-img}tea.jpg"); background-size: cover;
+  background-position: center center;
+}

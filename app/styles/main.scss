@@ -5,7 +5,6 @@
 @import "compass/css3";
 
 @import "variables";
-@import "contacts";
 
 @font-face {
   font-family: 'Glegoo';
@@ -307,146 +306,6 @@ nav {
   }
 }
 
-#values {
-  background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
-}
-
-#change {
-  color: $bg-color;
-  text-shadow: 1px 2px 8px #000;
-  background: url("#{$base-url-img}tea.jpg"); background-size: cover;
-  background-position: center center;
-}
-
-#background {
-  background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
-
-  .pf-content-container {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-
-  div.jumbotron {
-    background-position: center center;
-    display: block;
-    text-shadow: 1px 2px 8px #000;
-
-    .bg-full-container {
-      overflow: hidden;
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    margin-bottom: 0px;
-    color: $bg-color;
-    min-height: 250px;
-
-    p,h2,h3 {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-
-    h2 {
-      font-size: 24px;
-      text-align: center;
-    }
-
-    h3 {
-      font-size: 18px;
-      padding-left: 100px;
-      padding-top: 24px;
-    }
-
-    p {
-      font-size: 14px;
-      padding-top: 7px;
-    }
-
-    a {
-      color: $bg-color;
-      text-decoration: underline;
-    }
-  }
-
-  #bg-research {
-
-    background-image: url("#{$base-url-img}research.jpg"); background-size: cover;
-
-    &:hover,&.expanded {
-      background-image: url("#{$base-url-img}research-hover.jpg"); background-size: cover !important;
-    }
-  }
-
-  #bg-practice {
-    background-image: url("#{$base-url-img}practice.jpg"); background-size: cover;
-
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover;
-    }
-  }
-
-  #bg-method{
-    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
-
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
-    }
-  }
-}
-
-#portfolio {
-  color: $bg-color;
-  text-shadow: 1px 2px 8px #000;
-  background: url("#{$base-url-img}book.jpg"); background-size: cover;
-  background-position: center center;
-}
-
-#contact {
-
-  header {
-    color: $bg-color;
-    text-shadow: 1px 2px 8px #000;
-  }
-
-  .pf-content-container {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    height: 0px;
-  }
-  
-  #contact-grid {
-    display: none;
-  }
-
-  article.person {
-    display: none;
-  }
-
-  article {
-    width: 50%;
-    float: left;
-
-    &:nth-child(even) {
-      clear: left;
-    }
-
-    h1 {
-      text-align: left;
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-
-  a {
-    color: #333;
-    text-decoration: underline;
-  }
-}
-
 body>footer {
   position: fixed;
   bottom: 0px;
@@ -456,3 +315,8 @@ body>footer {
   color: #7e7e7e;
 }
 
+@import "values";
+@import "change";
+@import "portfolio";
+@import "contact";
+@import "background";
