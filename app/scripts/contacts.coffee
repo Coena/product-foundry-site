@@ -40,8 +40,9 @@ contactgrid = (hex) ->
         titleElem = $('h1', srcElem)
         contentElem = titleElem.nextAll()
         trigger = if type == 'person' then 'hover' else 'click'
+        delay = if trigger == 'hover' then { show: 500, hide: 100 } else { show: 0, hide: 0 }
         placement = if y < 0 then 'bottom' else 'top'
-        cell.popover({ placement: placement, trigger: trigger, title: titleElem.text(), content: contentElem.html(), html: true })
+        cell.popover({ placement: placement, trigger: trigger, title: titleElem.text(), content: contentElem.html(), delay: delay, html: true })
 
     grid.root.appendChild(cell[0])
 
