@@ -72,6 +72,29 @@
     left: 0px;
     right: initial
   }
+
+  section#contact {
+    box-shadow: none;
+
+    .pf-content-container {
+      background: #e3e3e9 url('#{$base-url-img}back.svg') center center;
+      background-size: 78px 135px;
+
+      position: absolute;
+      height: 100%;
+      left: 0px;
+      right: 0px;
+    }
+
+    #contact-grid {
+      display: none !important;
+    }
+
+    article.location {
+      display: initial !important;
+      padding-bottom: 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -102,28 +125,8 @@
   }
 
   section#contact {
-    box-shadow: none;
-
-    .pf-content-container {
-      background: #e3e3e9;
-      background-size: 78px 135px;
-      background-image: url('#{$base-url-img}back.svg');
-      background-position: center center;
-
-      position: absolute;
-      height: auto;
-      left: 0px;
-      right: 0px;
-    }
-
-    #contact-grid {
-      display: none !important;
-    }
-
     article.location {
-      display: initial !important;
       width: 100%;
-      padding-bottom: 24px;
     }
   }
 }
