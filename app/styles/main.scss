@@ -372,17 +372,18 @@ nav {
   }
 
   #bg-research {
+
     background-image: url("#{$base-url-img}research.jpg"); background-size: cover;
 
-    &:hover {
-      background-image: url("#{$base-url-img}research-hover.jpg"); background-size: cover;
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}research-hover.jpg"); background-size: cover !important;
     }
   }
 
   #bg-practice {
     background-image: url("#{$base-url-img}practice.jpg"); background-size: cover;
 
-    &:hover {
+    &:hover,&.expanded  {
       background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover;
     }
   }
@@ -390,7 +391,7 @@ nav {
   #bg-method{
     background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
 
-    &:hover {
+    &:hover,&.expanded  {
       background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
     }
   }

@@ -14,12 +14,11 @@ $ ->
 
       container = elem.find('.bg-full-container')
       targetHeight = 0
-      bgImage = elem.css('background-image')
       if (container.height() == 0)
         targetHeight = container.find('.bg-full').height() + 60
-        elem.css('background-image', bgImage)
+        elem.addClass('expanded')
       else
-        elem.css('background-image', '')
+        elem.removeClass('expanded')
 
       container.animate({'height': targetHeight}, 500, () -> $('body').scrollspy('refresh'))
     )
