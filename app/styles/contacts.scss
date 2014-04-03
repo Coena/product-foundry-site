@@ -36,6 +36,8 @@ $contacts: (
     }
 
     &.location {
+      color: #888;
+      font-size: 11px;
       background-image: url("#{$base-url-img}bb-landmark-cell.svg");
     }
 

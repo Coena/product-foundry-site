@@ -92,7 +92,7 @@ nav {
 
     &:hover {
       background-color: transparent !important;
-      color: #222;
+      color: $text-color-dark;
     }
   }
 
@@ -281,7 +281,7 @@ nav {
     height: 100%;
     padding: 0px;
     top: 0px;
-    right: 200px;
+    right: 75px;
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -301,7 +301,7 @@ nav {
 
   section {
     margin-left: 125px;
-    margin-right: 375px;
+    margin-right: 250px;
 
     box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.2);
   }
@@ -409,11 +409,39 @@ nav {
     text-shadow: 1px 2px 8px #000;
   }
 
+  .popover {
+    width: 300px;
+  }
+
   .pf-content-container {
     position: absolute;
     left: 0px;
     right: 0px;
     height: 0px;
+  }
+  
+  #contact-grid {
+    display: none;
+  }
+
+  article {
+    background-color: $bg-color;
+    width: 50%;
+    float: left;
+
+    &:nth-child(even) {
+      clear: left;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  a {
+    color: #888;
   }
 }
 

@@ -73,3 +73,52 @@
     right: initial
   }
 }
+
+@media screen and (max-width: 640px) {
+  #contents .pf-content-container {
+    padding: 50px 25px 50px 25px;
+  }
+
+  #background {
+    .pf-content-container {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+
+    header,div.jumbotron {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      p,h3 {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  #pf-nav-content {
+    display: none;
+  }
+
+  section#contact {
+    box-shadow: none;
+
+    .pf-content-container {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      height: 0px;
+    }
+
+    #contact-grid {
+      display: none !important;
+    }
+
+    article {
+      display: initial !important;
+      width: 100%;
+      padding-bottom: 24px;
+    }
+  }
+}

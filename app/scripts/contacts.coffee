@@ -23,7 +23,7 @@ $ ->
     offsetX = -1
     offsetY = 1
 
-    add = (x, y, name, text) ->
+    add = (x, y, name, content) ->
       x = x + offsetX
       y = y + offsetY
 
@@ -32,45 +32,51 @@ $ ->
       cell.css('left', pos.x + "px")
       cell.css('top', pos.y + "px")
 
-      if text?
-        cell.html(text)
+      if name == 'contact'
+        srcElem = $('#' + content)
+        titleElem = $('h1', srcElem)
+        contentElem = titleElem.nextAll()
+        log.error(contentElem.html())
+        cell.popover({ placement: 'top', trigger: 'click', title: titleElem.text(), content: contentElem.html(), html: true })
+      else if name == 'location'
+        cell.html(content)
+      else
+        cell.popover({ placement: 'top', trigger: 'hover', title: content, html: true, delay: { show: 500, hide: 0 } })
 
       grid.root.appendChild(cell[0])
 
     add(-1, 1, "location", "Netherlands")
-    add(-2, 1, "contact")
-    add(-1, 0, "sergej")
-    add(0, 0, "job")
-    add(0, 1, "andre")
-    add(-1, 2, "hung")
-    add(-2, 2, "indranil")
-    add(-3, 2, "olaf")
+    add(-2, 1, "contact", "netherlands")
+    add(-1, 0, "sergej", "Sergej")
+    add(0, 0, "job", "Job")
+    add(0, 1, "andre", "Andr&eacute;")
+    add(-1, 2, "hung", "Hung")
+    add(-2, 2, "indranil", "Indranil")
+    add(-3, 2, "olaf", "Olaf")
 
     add(2, -2, "location", "Romania")
-    add(2, -3, "contact")
-    add(4, -4, "andreea")
-    add(3, -4, "marian")
-    add(2, -4, "adi")
-    add(1, -3, "daniel")
-    add(1, -2, "teodora")
-    add(3, -2, "marius")
-    add(3, -3, "raluca")
+    add(2, -3, "contact", "romania")
+    add(4, -4, "andreea", "Andreea")
+    add(3, -4, "marian", "Marian")
+    add(2, -4, "adi", "Adrian")
+    add(1, -3, "daniel", "Daniel")
+    add(1, -2, "teodora", "Teodora")
+    add(3, -2, "marius", "Marius")
+    add(3, -3, "raluca", "Raluca")
 
     add(1, 3, "location", "Germany")
-    add(0, 3, "contact")
-    add(1, 2, "michael")
+    add(0, 3, "contact", "germany")
+    add(1, 2, "michael", "Michael")
 
     add(3, 0, "location", "India")
-    add(3, 1, "contact")
-    add(4, 0, "piu")
-    add(4, -1, "aruna")
-    add(2, 0, "sanjay")
+    add(3, 1, "contact", "india")
+    add(4, 0, "piu", "Piu")
+    add(4, -1, "aruna", "Aruna")
+    add(2, 0, "sanjay", "Sanjay")
 
-
-
-  contactgrid(hex.extend(window.hex,
-    mouseover = () ->
-  ))
+  $('#contact-grid').show()
+  $('#contact article').hide()
+  contactgrid(window.hex)
 
 
 
