@@ -30,6 +30,7 @@ contactgrid = (hex) ->
     cell = $('<div>').addClass('cell').addClass(type)
     cell.css('left', pos.x + "px")
     cell.css('top', pos.y + "px")
+    cell.attr('rel', type + '-' + content)
 
     if (type == 'location')
       cell.html(content)
