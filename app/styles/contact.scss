@@ -43,6 +43,11 @@ $contacts: (
       }
     }
 
+    &.logo {
+      background: url("#{$base-url-img}logo-hover.svg") -1px -3px;
+      background-size: 87px 103px;
+    }
+
     &.location {
       color: #888;
       font-size: 11px;

@@ -10,6 +10,7 @@ contactgrid = (hex) ->
       hex.oldAddEvent(elem, type, handler)
 
   grid = hex.grid(elem, { type: "businesscanvas" })
+
   size = hex.size(grid.elem)
 
   centerGrid = () ->
@@ -32,6 +33,8 @@ contactgrid = (hex) ->
     cell.css('top', pos.y + "px")
     cell.attr('rel', type + '-' + content)
 
+    if (type == 'logo')
+    else
     if (type == 'location')
       cell.html(content)
     else
@@ -47,34 +50,36 @@ contactgrid = (hex) ->
 
     grid.root.appendChild(cell[0])
 
-  add(-1, 1, "location", "Netherlands")
-  add(-2, 1, "contact", "netherlands")
-  add(-1, 0, "person", "sergej")
-  add(0, 0, "person", "job")
-  add(0, 1, "person", "andre")
-  add(-1, 2, "person", "hung")
+  add(1, -1, "logo", "")
+
+  add(0, 0, "location", "Netherlands")
+  add(-1, 0, "contact", "netherlands")
+  add(-2, 1, "person", "sergej")
+  add(-1, 1, "person", "job")
+  add(-2, 0, "person", "andre")
+  add(-3, 1, "person", "hung")
   add(-2, 2, "person", "indranil")
   add(-3, 2, "person", "olaf")
 
-  add(2, -2, "location", "Romania")
-  add(2, -3, "contact", "romania")
+  add(1, -2, "location", "Romania")
+  add(1, -3, "contact", "romania")
   add(4, -4, "person", "andreea")
   add(3, -4, "person", "marian")
   add(2, -4, "person", "adrian")
-  add(1, -3, "person", "daniel")
-  add(1, -2, "person", "teodora")
-  add(3, -2, "person", "marius")
+  add(2, -3, "person", "daniel")
+  add(3, -5, "person", "teodora")
+  add(4, -5, "person", "marius")
   add(3, -3, "person", "raluca")
 
-  add(1, 3, "location", "Germany")
-  add(0, 3, "contact", "germany")
-  add(1, 2, "person", "michael")
+  add(2, -1, "location", "Germany")
+  add(3, -1, "contact", "germany")
+  add(4, -1, "person", "michael")
 
-  add(3, 0, "location", "India")
-  add(3, 1, "contact", "india")
-  add(4, 0, "person", "piu")
-  add(4, -1, "person", "aruna")
-  add(2, 0, "person", "sanjay")
+  add(1, 0, "location", "India")
+  add(1, 1, "contact", "india")
+  add(2, 1, "person", "sanjay")
+  add(1, 2, "person", "piu")
+  add(2, 2, "person", "aruna")
 
 $ ->
   $('#contact-grid').show()
