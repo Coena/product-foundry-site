@@ -18,6 +18,7 @@ module.exports = function (grunt) {
     // Load additional NPM tasks
     grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-image-resize');
+    grunt.loadNpmTasks('grunt-preload-manifest');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -43,6 +44,31 @@ module.exports = function (grunt) {
             icons: {
                 src: '<%= config.app %>/images/favicon.png',
                 dest: '<%= config.dist %>/'
+            }
+        },
+
+        manifest: {
+            serve: {
+                options: {},
+                files: [
+                    {
+                        cwd: '<%= config.app %>',
+                        src: ['images/**/*'],
+                        dest: '.tmp/preload_manifest.json',
+                        filter: 'isFile'
+                    }
+                ]
+            },
+            dist: {
+                options: {},
+                files: [
+                    {
+                        cwd: '<%= config.dist %>',
+                        src: ['images/**/*'],
+                        dest: '<%= config.dist %>/preload_manifest.json',
+                        filter: 'isFile'
+                    }
+                ]
             }
         },
 
@@ -453,6 +479,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'coffee:dist',
+            'manifest:serve',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -496,7 +523,8 @@ module.exports = function (grunt) {
         'rev',
         'usemin',
         'favicons',
-        'htmlmin'
+        'htmlmin',
+        'manifest:dist'
     ]);
 
     grunt.registerTask('default', [

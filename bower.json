@@ -6,7 +6,8 @@
     "jquery": "~1.11.0",
     "twbs-bootstrap-sass": "~3.1.1",
     "loglevel": "~0.5.0",
-    "hexlib": "~0.1.0"
+    "hexlib": "~0.1.0",
+    "PreloadJS": "*"
   },
   "devDependencies": {}
 }
