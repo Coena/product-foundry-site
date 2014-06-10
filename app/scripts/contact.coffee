@@ -77,7 +77,6 @@ contactgrid = (hex) ->
 
   add(1, 0, "location", "India")
   add(1, 1, "contact", "india")
-  add(1, 2, "person", "aruna")
   add(2, 1, "person", "sanjay")
 
 $ ->
