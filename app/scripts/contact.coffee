@@ -65,7 +65,6 @@ contactgrid = (hex) ->
   add(1, -3, "contact", "romania")
   add(4, -4, "person", "andreea")
   add(3, -4, "person", "marian")
-  add(2, -4, "person", "adrian")
   add(2, -3, "person", "daniel")
   add(3, -5, "person", "teodora")
   add(4, -5, "person", "marius")
