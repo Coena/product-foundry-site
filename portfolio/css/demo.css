@@ -47,7 +47,7 @@
 body {
 	background: #f9f9fb;
 	color: #50505b;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1em;
   	font-family: Roboto Slab;
 }
@@ -76,8 +76,8 @@ section {
 
 .pf-header h1 {
 	margin: 0;
-	font-weight: 800;
-	font-size: 4em;
+	font-weight: 400;
+	font-size: 3em;
 	line-height: 1.3;
 }
 
