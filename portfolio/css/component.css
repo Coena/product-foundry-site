@@ -792,7 +792,7 @@ figure.effect-ruby:hover p {
 /*---------------*/
 
 figure.effect-milo {
-	background: #2e5d5a;
+	background: #202027;
 	-webkit-perspective: 1000px;
 	perspective: 1000px;
 }
@@ -802,7 +802,7 @@ figure.effect-milo img {
 
 	opacity: 1;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	transition: opacity 0.8s, transform 0.8s;
 	-webkit-transform: translate3d(-10px,0,0) scale(1);
 	transform: translate3d(-10px,0,0) scale(1);
 	-webkit-backface-visibility: hidden;
@@ -810,9 +810,9 @@ figure.effect-milo img {
 }
 
 figure.effect-milo:hover img {
-	opacity: 0.5;
-	-webkit-transform: translate3d(0,0,0) scale(1.12);
-	transform: translate3d(0,0,0) scale(1.12);
+	opacity: 0.3;
+	-webkit-transform: translate3d(0,0,0) scale(1.05);
+	transform: translate3d(0,0,0) scale(1.05);
 }
 
 figure.effect-milo h2 {
