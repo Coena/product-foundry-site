@@ -152,4 +152,27 @@
   }
 }
 
+@media screen and (max-width: 69.5em) {
+  #portfolio {
+    .grid {
+      figure {
+        width: 50%;
+        figcaption {
+          font-size: 90%;
+        }
+      }
+    }
+	}
+}
+
+@media screen and (max-width: 41.5em) {
+  #portfolio {
+    .grid {
+      figure {
+        width: 100%;
+      }
+    }
+	}
+}
+
 
