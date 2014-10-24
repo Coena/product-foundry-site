@@ -28,3 +28,10 @@ $ ->
         $('#pf-logo-content,#pf-nav-content').css('position', 'fixed')
       else
         $('#pf-logo-content,#pf-nav-content').css('position', 'absolute')
+  
+  $("#portfolio a[href=\"#\"]").each ->
+    $(this).on "click", (e) ->
+      e.preventDefault()
+      return
+
+    return
