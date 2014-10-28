@@ -131,7 +131,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 620px) {
   #portfolio {
     header {
       h1 {
@@ -151,14 +151,14 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
   #portfolio {
     .grid {
       figure {
-        width: 50%;
+        width: 25%;
       }
     }
-	}
+  }
 }
 
 
