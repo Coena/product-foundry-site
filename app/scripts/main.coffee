@@ -16,19 +16,14 @@ $ ->
 
   isFixedControls = () -> window.pageYOffset > $('#home').height()
 
-  fixedControls = isFixedControls()
-
   window.onscroll = () ->
     shouldFixControls = isFixedControls()
 
-    if (fixedControls != shouldFixControls)
-      fixedControls = shouldFixControls
+    if (shouldFixControls)
+      $('#pf-logo-content,#pf-nav-content').css('position', 'fixed')
+    else
+      $('#pf-logo-content,#pf-nav-content').css('position', 'absolute')
 
-      if (shouldFixControls)
-        $('#pf-logo-content,#pf-nav-content').css('position', 'fixed')
-      else
-        $('#pf-logo-content,#pf-nav-content').css('position', 'absolute')
-  
   $("#portfolio a[href=\"#\"]").each ->
     $(this).on "click", (e) ->
       e.preventDefault()
