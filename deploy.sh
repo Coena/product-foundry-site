@@ -1,1 +1,1 @@
-rsync -avz dist/ product-foundry.com@46.4.87.236:
+rsync -avz dist/ site-deploy@178.63.1.159:product-foundry.com
