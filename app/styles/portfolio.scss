@@ -24,13 +24,16 @@
     max-width: 1920px;
     list-style: none;
     text-align: center;
+    font-size: 0;
+    white-space-collapsing: discard;
     
     figure {
       position: relative;
       z-index: 1;
+      font-size: 16px;
       display: inline-block;
       overflow: hidden;
-      margin: -0.15em;
+      margin: 0 -1px;
       width: 100%;
       height: 400px;
       background: #3085a3;
@@ -51,7 +54,7 @@
         padding: 2em;
         color: #fff;
         text-transform: uppercase;
-        font-size: 1.125em;
+        font-size: 16px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         &:before,
@@ -85,7 +88,7 @@
         font-size: 68.5%;
       }
       &.effect-pf {
-        background: #202027;
+        background: transparent;
         -webkit-perspective: 1000px;
         perspective: 1000px;
         img {
@@ -115,6 +118,7 @@
           transform: translate3d(-40px,0,0);
         }
         &:hover {
+        background: #202027;
           img {
             opacity: 0.3;
             -webkit-transform: translate3d(0,0,0) scale(1.05);
