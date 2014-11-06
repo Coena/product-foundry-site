@@ -53,12 +53,19 @@
     }
   }
 
-  #bg-research {
-
-    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+  #bg-products {
+    background-image: url("#{$base-url-img}products.jpg"); background-size: cover;
 
     &:hover,&.expanded {
-      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover !important;
+      background-image: url("#{$base-url-img}products-hover.jpg"); background-size: cover !important;
+    }
+  }
+
+  #bg-method {
+    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+
+    &:hover,&.expanded  {
+      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
     }
   }
 
@@ -70,7 +77,7 @@
     }
   }
 
-  #bg-method{
+  #bg-projects {
     background-image: url("#{$base-url-img}projects.jpg"); background-size: cover;
 
     &:hover,&.expanded  {
