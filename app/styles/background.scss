@@ -1,8 +1,6 @@
 @import 'variables';
 
 #background {
-  background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
-
   .pf-content-container {
     padding-left: 0px;
     padding-right: 0px;
@@ -24,7 +22,7 @@
 
     margin-bottom: 0px;
     color: $bg-color;
-    min-height: 250px;
+    min-height: 150px;
 
     p,h2,h3 {
       padding-left: 100px;
@@ -53,28 +51,35 @@
     }
   }
 
-  #bg-research {
-
-    background-image: url("#{$base-url-img}research.jpg"); background-size: cover;
+  #bg-products {
+    background-image: url("#{$base-url-img}products.jpg"); background-size: cover;
 
     &:hover,&.expanded {
-      background-image: url("#{$base-url-img}research-hover.jpg"); background-size: cover !important;
+      background-image: url("#{$base-url-img}products-hover.jpg"); background-size: cover !important;
+    }
+  }
+
+  #bg-method {
+    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover !important;
     }
   }
 
   #bg-practice {
     background-image: url("#{$base-url-img}practice.jpg"); background-size: cover;
 
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover;
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover !important;
     }
   }
 
-  #bg-method{
-    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+  #bg-projects {
+    background-image: url("#{$base-url-img}projects.jpg"); background-size: cover;
 
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}projects-hover.jpg"); background-size: cover !important;
     }
   }
 }
