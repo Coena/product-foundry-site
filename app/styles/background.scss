@@ -24,7 +24,7 @@
 
     margin-bottom: 0px;
     color: $bg-color;
-    min-height: 250px;
+    min-height: 150px;
 
     p,h2,h3 {
       padding-left: 100px;
@@ -64,24 +64,24 @@
   #bg-method {
     background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
 
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover !important;
     }
   }
 
   #bg-practice {
     background-image: url("#{$base-url-img}practice.jpg"); background-size: cover;
 
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover;
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover !important;
     }
   }
 
   #bg-projects {
     background-image: url("#{$base-url-img}projects.jpg"); background-size: cover;
 
-    &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}projects-hover.jpg"); background-size: cover;
+    &:hover,&.expanded {
+      background-image: url("#{$base-url-img}projects-hover.jpg"); background-size: cover !important;
     }
   }
 }
