@@ -55,10 +55,10 @@
 
   #bg-research {
 
-    background-image: url("#{$base-url-img}research.jpg"); background-size: cover;
+    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
 
     &:hover,&.expanded {
-      background-image: url("#{$base-url-img}research-hover.jpg"); background-size: cover !important;
+      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover !important;
     }
   }
 
@@ -71,10 +71,10 @@
   }
 
   #bg-method{
-    background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+    background-image: url("#{$base-url-img}projects.jpg"); background-size: cover;
 
     &:hover,&.expanded  {
-      background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover;
+      background-image: url("#{$base-url-img}projects-hover.jpg"); background-size: cover;
     }
   }
 }
