@@ -1,6 +1,8 @@
 @import 'variables';
 
 #portfolio {
+  background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
+
   color: $bg-color;
 
   .pf-content-container {
