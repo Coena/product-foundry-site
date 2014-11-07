@@ -1,6 +1,8 @@
 @import 'variables';
 
 #portfolio {
+  background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
+
   color: $bg-color;
 
   .pf-content-container {
@@ -87,18 +89,19 @@
       p {
         margin: 0;
         letter-spacing: 1px;
-        font-size: 68.5%;
+        font-size: 72.5%;
       }
       &.effect-pf {
-        background: transparent;
+        background: #202027;
         -webkit-perspective: 1000px;
         perspective: 1000px;
+        text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
         img {
-          opacity: 1;
+          opacity: 0.8;
           -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
           transition: opacity 0.8s, transform 0.8s;
-          -webkit-transform: translate3d(-10px,0,0) scale(1);
-          transform: translate3d(-10px,0,0) scale(1);
+          -webkit-transform: translate3d(0,0,0) scale(1.05);
+          transform: translate3d(0,0,0) scale(1.05);
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
         }
@@ -109,28 +112,59 @@
           padding: 1em 1.2em;
         }
         p {
-          padding: 0 10px 0 0;
+          padding: 0 10px 0 35px;
           width: 100%;
           border-right: 1px solid #fff;
           text-align: right;
-          opacity: 0;
+          opacity: 1;
           -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
           transition: opacity 0.35s, transform 0.35s;
-          -webkit-transform: translate3d(-40px,0,0);
-          transform: translate3d(-40px,0,0);
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
         }
-        &:hover {
+      }
+    }
+  }
+}
+
+.no-touch #portfolio {
+  .grid {
+    figure.effect-pf {
+      background: transparent;
+
+      img {
+        opacity: 1;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.8s, transform 0.8s;
+        -webkit-transform: translate3d(-10px,0,0) scale(1);
+        transform: translate3d(-10px,0,0) scale(1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      p {
+        padding: 0 10px 0 35px;
+        width: 100%;
+        border-right: 1px solid #fff;
+        text-align: right;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(-40px,0,0);
+        transform: translate3d(-40px,0,0);
+      }
+
+      &:hover {
         background: #202027;
-          img {
-            opacity: 0.3;
-            -webkit-transform: translate3d(0,0,0) scale(1.05);
-            transform: translate3d(0,0,0) scale(1.05);
-          }
-          p {
-            opacity: 1;
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-          }
+        img {
+          opacity: 0.3;
+          -webkit-transform: translate3d(0,0,0) scale(1.05);
+          transform: translate3d(0,0,0) scale(1.05);
+        }
+        p {
+          opacity: 1;
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
         }
       }
     }
