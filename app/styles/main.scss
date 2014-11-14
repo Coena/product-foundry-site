@@ -186,7 +186,8 @@ nav {
     }
   }
 }
-
+    
+    
 #pf-logo {
   margin: auto;
   position: absolute;
@@ -302,8 +303,10 @@ nav {
   section {
     margin-left: 125px;
     margin-right: 250px;
-
     box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.2);
+      section {
+        margin: 0;
+      }
   }
 }
 
