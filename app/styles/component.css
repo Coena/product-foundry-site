@@ -22,31 +22,31 @@
 .bl-main > section {
 	position: absolute;
 	width: 50%;
-	height: 50%;
+	height: 25%;
 }
 
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #F06060;
+    background: #eeeef2;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
+	background: #f9f9fb;
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+	background: #f9f9fb;
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #10A296;
+	background: #eeeef2;
 }
 
 .bl-box {
@@ -82,12 +82,10 @@
 .bl-box h2 {
 	text-align: center;
 	margin: 0;
-	padding: 20px;
+    padding-bottom: 100px;
 	width: 100%;
 	font-size: 1.8em;
-	letter-spacing: 2px;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 200;
 }
 
 .bl-icon {
@@ -135,7 +133,7 @@
 }
 
 .bl-icon-close:before {
-	content: "\e005";
+	content:"\e014";
 }
 
 .bl-content, 
