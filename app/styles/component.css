@@ -6,10 +6,6 @@
 	box-sizing: border-box;
 }
 
-a:hover {
-	color: #fff;
-}
-
 .workcontainer {
     height: 100%; 
 }
@@ -95,7 +91,7 @@ a:hover {
 }
 
 .bl-icon {
-	font-family: 'icomoon';
+	font-family: 'Glyphicons Halflings';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -131,7 +127,7 @@ a:hover {
 .bl-main > section .bl-icon-close {
 	position: absolute;
 	top: 20px;
-	right: 20px;
+	right: 50px;
 	cursor: pointer;
 	z-index: 100;
 	opacity: 0;
@@ -148,7 +144,7 @@ div.bl-panel-items > div > div {
 	pointer-events: none;
 	position: absolute;
 	top: 60px;
-	left: 30px;
+	left: 60px;
 	right: 30px;
 	bottom: 30px;
 	padding: 0 20px;
@@ -161,12 +157,12 @@ div.bl-panel-items > div > div {
 .bl-content p {
 	margin: 0 auto;
 	padding-bottom: 15px;
-	font-size: 1.7em;
+	font-size: 1.1em;
 	line-height: 1.8;
 }
 
 .bl-content h2 {
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 300;
 	margin: 0 0 20px 0;
 }
