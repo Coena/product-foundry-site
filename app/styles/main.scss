@@ -204,7 +204,7 @@ nav {
 }
 
 #pf-nav-content {
-  z-index: 1000;
+  z-index: 99999;
 }
 
 #home {
@@ -273,7 +273,7 @@ nav {
     padding-left: 10px;
     font-size: 0px;
     line-height: 0px;
-    z-index: 1000;
+    z-index: 99999;
 
     background: url("#{$base-url-img}logoindex.svg") no-repeat center center; background-size: 185px 185px;
   }
