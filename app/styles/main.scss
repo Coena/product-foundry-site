@@ -78,7 +78,11 @@ nav {
       &.nav-background {
         background-image: url("#{$base-url-img}green-hover.svg");
       }
-
+      
+      &.nav-workwithus {
+        background-image: url("#{$base-url-img}orange-hover.svg");
+      }
+      
       &.nav-portfolio {
         background-image: url("#{$base-url-img}purple-hover.svg");
       }
@@ -129,7 +133,14 @@ nav {
       background-image: url("#{$base-url-img}green-hover.svg");
     }
   }
+  .nav-workwithus {
+    background-image: url("#{$base-url-img}orange.svg");
 
+    &:hover {
+      background-image: url("#{$base-url-img}orange-hover.svg");
+    }
+  }
+    
   .nav-portfolio {
     background-image: url("#{$base-url-img}purple.svg");
 
