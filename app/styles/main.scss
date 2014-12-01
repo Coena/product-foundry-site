@@ -325,9 +325,15 @@ nav {
 }
 
 body>footer {
+  ms-transform: rotate(90deg);
+  ms-transform-origin: bottom left;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin: bottom left;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 290px;
+  left: -4px;
   font-size: 10px;
   padding: 20px 20px 5px;
   color: #7e7e7e;

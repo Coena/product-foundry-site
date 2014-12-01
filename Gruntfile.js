@@ -435,6 +435,19 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            email_logo: {
+                files: [{
+                    nonull: true,
+                    expand: true,
+                    dot: true,
+                    flatten: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>',
+                    src: [
+                        'images/product-foundry-email.png'
+                    ]
+                }]
+            },
             styles: {
                 expand: true,
                 dot: true,
@@ -529,7 +542,8 @@ module.exports = function (grunt) {
         'usemin',
         'favicons',
         'htmlmin',
-        'manifest:dist'
+        'manifest:dist',
+        'copy:email_logo'
     ]);
 
     grunt.registerTask('default', [
