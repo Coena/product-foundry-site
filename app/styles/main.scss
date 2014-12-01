@@ -56,6 +56,7 @@ nav {
     &.nav-pills li.active a {
       color: inherit;
       background-color: inherit;
+      border-radius: 0px;
 
       &:hover {
         color: inherit;
@@ -69,7 +70,7 @@ nav {
         background-image: url("#{$base-url-img}red-hover.svg");
       }
 
-      &.nav-change {
+      &.nav-work-with-us {
         background-image: url("#{$base-url-img}orange-hover.svg");
       }
 
@@ -112,7 +113,7 @@ nav {
     }
   }
 
-  .nav-change {
+  .nav-work-with-us {
     background-image: url("#{$base-url-img}orange.svg");
 
     &:hover,&:active {
@@ -172,7 +173,7 @@ nav {
     padding: 0px;
 
     li {
-      padding-bottom: 10px;
+      padding-bottom: 0px;
       clear: both;
 
       a {
@@ -181,7 +182,7 @@ nav {
         background-size: 55px;
         background-position: left 24px;
         background-repeat: no-repeat;
-        line-height: 55px;
+        line-height: 60px;
       }
     }
   }
@@ -303,7 +304,7 @@ nav {
     margin-left: 125px;
     margin-right: 250px;
 
-    box-shadow: inset 0px 0px 46px 0px rgba(23, 40, 93, 0.2);
+    box-shadow: inset 0px 5px 20px 0px rgba(23, 40, 93, 0.1);
   }
 }
 
@@ -327,3 +328,4 @@ body>footer {
 @import "portfolio";
 @import "contact";
 @import "background";
+@import "workwithus";
