@@ -2,43 +2,85 @@
 
 #work-with-us {
 
-    .pf-content-container {
-        padding: 40px 0px 0px;
-        }
+     .pf-content-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  div.jumbotron {
+    background-position: center center;
+    display: block;
+    text-shadow: 1px 2px 8px #000;
+
+    .bg-full-container {
+      overflow: hidden;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    margin-bottom: 0px;
+    color: $bg-color;
+    min-height: 150px;
+
+    p,h2,h3 {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 18px;
+      padding-left: 100px;
+      padding-top: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      padding-top: 7px;
+    }
+
+    a {
+      color: $bg-color;
+      text-decoration: underline;
+    }
+  }
     
-    .center-container {
-          height:100%;
-          display: table;
-          width:100%;
-          margin:0;
+    #bg-job {
+        background-image: url("#{$base-url-img}products.jpg"); background-size: cover;
+
+        &:hover,&.expanded {
+          background-image: url("#{$base-url-img}products-hover.jpg"); background-size: cover !important;
         }
+      }
 
-    .center-row {
-          height:50%;
-          width:100%;
-          display: table-row;
+      #bg-investors {
+        background-image: url("#{$base-url-img}method.jpg"); background-size: cover;
+
+        &:hover,&.expanded {
+          background-image: url("#{$base-url-img}method-hover.jpg"); background-size: cover !important;
         }
+      }
 
-    .center-row > div {
-          height:100%;
-          width:50%;
-          display: table-cell;
-          border:0 solid #eee;
-          color:#fff;
-          vertical-align:middle;
+      #bg-partners {
+        background-image: url("#{$base-url-img}practice.jpg"); background-size: cover;
+
+        &:hover,&.expanded {
+          background-image: url("#{$base-url-img}practice-hover.jpg"); background-size: cover !important;
         }
+      }
 
-    .bg-one {
-      background:#efefef url('/assets/example/bg_suburb.jpg');
-    }
-    .bg-two {
-      background:#efefef url('/assets/example/bg_dogcat.jpg');
-    }
-    .bg-three {
-      background:#efefef url('/assets/example/bg_blueplane.jpg');
-    }
-    .bg-four {
-      background:#efefef url('/assets/example/bg1.jpg');
-    }
+      #bg-associates {
+        background-image: url("#{$base-url-img}projects.jpg"); background-size: cover;
 
+        &:hover,&.expanded {
+          background-image: url("#{$base-url-img}projects-hover.jpg"); background-size: cover !important;
+        }
+      }
 }
