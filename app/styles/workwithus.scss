@@ -1,16 +1,11 @@
 @import 'variables';
 
 #work-with-us {
-    background: url("#{$base-url-img}pattern-light.svg") center center; background-size: 63px 63px;
-    
-    
-    .pf-content-container {
+  background: url("#{$base-url-img}pattern-light.svg") top left; background-size: 63px 63px;
+
+  .pf-content-container {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
   }
-
-
-    
-    
 }
