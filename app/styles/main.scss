@@ -268,6 +268,7 @@ nav {
     bottom: 0px;
     left: 30px;
     width: 185px;
+    height: 180px;
     padding-left: 10px;
     font-size: 0px;
     line-height: 0px;
@@ -296,6 +297,44 @@ nav {
     line-height: 72px;
   }
 
+   .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+  }
+    
+    .panel-heading {
+    padding: 60px 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    }
+    
+    .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+    overflow: hidden;
+    }
+    
+    
+    .panel {
+    margin-bottom: 20px;
+    background-color: #ececef;
+    border: 0px solid transparent;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.05);    
+}
+        
+    .panel-group .panel-heading + .panel-collapse .panel-body {
+    border-top: 0;
+    box-shadow: inset 0px 5px 10px 0px rgba(23, 40, 93, 0.08);
+    }
+    
+    .panel-body {
+    padding: 50px 100px 50px 100px;
+    }
+    
+    
   p {
     text-align: justify;
   }
