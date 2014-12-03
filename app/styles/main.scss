@@ -70,10 +70,6 @@ nav {
         background-image: url("#{$base-url-img}red-hover.svg");
       }
 
-      &.nav-work-with-us {
-        background-image: url("#{$base-url-img}orange-hover.svg");
-      }
-
       &.nav-background {
         background-image: url("#{$base-url-img}green-hover.svg");
       }
@@ -81,7 +77,11 @@ nav {
       &.nav-portfolio {
         background-image: url("#{$base-url-img}purple-hover.svg");
       }
-
+        
+      &.nav-work-with-us {
+        background-image: url("#{$base-url-img}orange-hover.svg");
+      }
+        
       &.nav-who-we-are {
         background-image: url("#{$base-url-img}blue-hover.svg");
       }
@@ -113,14 +113,6 @@ nav {
     }
   }
 
-  .nav-work-with-us {
-    background-image: url("#{$base-url-img}orange.svg");
-
-    &:hover,&:active {
-      background-image: url("#{$base-url-img}orange-hover.svg");
-    }
-  }
-
   .nav-background {
     background-image: url("#{$base-url-img}green.svg");
 
@@ -134,6 +126,14 @@ nav {
 
     &:hover {
       background-image: url("#{$base-url-img}purple-hover.svg");
+    }
+  }
+
+  .nav-work-with-us {
+    background-image: url("#{$base-url-img}orange.svg");
+
+    &:hover{
+      background-image: url("#{$base-url-img}orange-hover.svg");
     }
   }
 
@@ -365,6 +365,6 @@ body>footer {
 @import "values";
 @import "change";
 @import "portfolio";
-@import "who-we-are";
 @import "background";
 @import "workwithus";
+@import "who-we-are";
