@@ -69,23 +69,23 @@ whowearegrid = function(hex) {
     }
     return grid.root.appendChild(cell[0]);
   };
-  add(3, -2, "logo", "");
-  add(2, -1, "location", "Netherlands");
-  add(1, 0, "person", "job");
-  add(1, -1, "person", "andre");
-  add(0, -1, "person", "hung");
-  add(0, 0, "person", "indranil");
-  add(3, -3, "location", "Romania");
-  add(5, -4, "person", "andreea");
-  add(4, -4, "person", "marian");
-  add(2, -3, "person", "daniel");
-  add(3, -4, "person", "teodora");
-  add(5, -5, "person", "marius");
-  add(4, -5, "person", "raluca");
-  add(4, -2, "location", "Germany");
-  add(5, -2, "person", "michael");
-  add(3, -1, "location", "India");
-  return add(3, 0, "person", "sanjay");
+  add(2, -1, "logo", "");
+  add(1, 0, "location", "Netherlands");
+  add(0, 1, "person", "job");
+  add(0, 0, "person", "andre");
+  add(-1, 0, "person", "hung");
+  add(-1, 1, "person", "indranil");
+  add(2, -2, "location", "Romania");
+  add(4, -3, "person", "andreea");
+  add(3, -3, "person", "marian");
+  add(1, -2, "person", "daniel");
+  add(2, -3, "person", "teodora");
+  add(4, -4, "person", "marius");
+  add(3, -4, "person", "raluca");
+  add(3, -1, "location", "Germany");
+  add(4, -1, "person", "michael");
+  add(2, 0, "location", "India");
+  return add(2, 1, "person", "sanjay");
 };
 
 $(function() {
