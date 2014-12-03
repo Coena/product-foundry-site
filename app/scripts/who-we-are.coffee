@@ -1,5 +1,5 @@
-contactgrid = (hex) ->
-  elem = document.getElementById("contact-grid")
+whowearegrid = (hex) ->
+  elem = document.getElementById("who-we-are-grid")
 
   ignoreEvents = ['mousewheel', 'DOMMouseScroll', 'panstart', 'panmove', 'panend']
 
@@ -53,34 +53,29 @@ contactgrid = (hex) ->
   add(2, -1, "logo", "")
 
   add(1, 0, "location", "Netherlands")
-  add(0, 0, "contact", "netherlands")
-  add(-1, 1, "person", "sergej")
   add(0, 1, "person", "job")
-  add(-1, 0, "person", "andre")
-  add(-2, 1, "person", "hung")
-  add(-2, 0, "person", "indranil")
+  add(0, 0, "person", "andre")
+  add(-1, 0, "person", "hung")
+  add(-1, 1, "person", "indranil")
 
   add(2, -2, "location", "Romania")
-  add(2, -3, "contact", "romania")
-  add(5, -4, "person", "andreea")
-  add(4, -4, "person", "marian")
-  add(3, -3, "person", "daniel")
-  add(3, -4, "person", "teodora")
-  add(2, -4, "person", "marius")
-  add(4, -3, "person", "raluca")
+  add(4, -3, "person", "andreea")
+  add(3, -3, "person", "marian")
+  add(1, -2, "person", "daniel")
+  add(2, -3, "person", "teodora")
+  add(4, -4, "person", "marius")
+  add(3, -4, "person", "raluca")
 
   add(3, -1, "location", "Germany")
-  add(4, -1, "contact", "germany")
-  add(5, -1, "person", "michael")
+  add(4, -1, "person", "michael")
 
   add(2, 0, "location", "India")
-  add(2, 1, "contact", "india")
-  add(3, 1, "person", "sanjay")
+  add(2, 1, "person", "sanjay")
 
 $ ->
-  $('#contact-grid').show()
-  $('#contact article').hide()
-  contactgrid(window.hex)
+  $('#who-we-are-grid').show()
+  $('#who-we-are article').hide()
+  whowearegrid(window.hex)
 
 
 
