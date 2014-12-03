@@ -85,6 +85,10 @@ nav {
       &.nav-who-we-are {
         background-image: url("#{$base-url-img}blue-hover.svg");
       }
+      
+      &.nav-contact {
+        background-image: url("#{$base-url-img}turq-hover.svg");
+      }
     }
   }
 
@@ -142,6 +146,14 @@ nav {
 
     &:hover {
       background-image: url("#{$base-url-img}blue-hover.svg");
+    }
+  }
+    
+  .nav-contact {
+    background-image: url("#{$base-url-img}turq.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}turq-hover.svg");
     }
   }
 }
