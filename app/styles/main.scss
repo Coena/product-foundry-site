@@ -82,7 +82,7 @@ nav {
         background-image: url("#{$base-url-img}purple-hover.svg");
       }
 
-      &.nav-contact {
+      &.nav-who-we-are {
         background-image: url("#{$base-url-img}blue-hover.svg");
       }
     }
@@ -137,7 +137,7 @@ nav {
     }
   }
 
-  .nav-contact {
+  .nav-who-we-are {
     background-image: url("#{$base-url-img}blue.svg");
 
     &:hover {
@@ -365,6 +365,6 @@ body>footer {
 @import "values";
 @import "change";
 @import "portfolio";
-@import "contact";
+@import "who-we-are";
 @import "background";
 @import "workwithus";

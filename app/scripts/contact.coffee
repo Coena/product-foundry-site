@@ -1,5 +1,5 @@
-contactgrid = (hex) ->
-  elem = document.getElementById("contact-grid")
+whowearegrid = (hex) ->
+  elem = document.getElementById("who-we-are-grid")
 
   ignoreEvents = ['mousewheel', 'DOMMouseScroll', 'panstart', 'panmove', 'panend']
 
@@ -78,9 +78,9 @@ contactgrid = (hex) ->
   add(3, 1, "person", "sanjay")
 
 $ ->
-  $('#contact-grid').show()
-  $('#contact article').hide()
-  contactgrid(window.hex)
+  $('#who-we-are-grid').show()
+  $('#who-we-are article').hide()
+  whowearegrid(window.hex)
 
 
 
