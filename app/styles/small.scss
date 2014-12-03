@@ -30,7 +30,13 @@
       padding-left: 5px;
       background-color: rgba(255, 255, 255, 0.5);
     }
-
+ 
+  #contact {
+   .pf-content-container {
+    padding: 50px 50px 50px 0px;
+    }
+}
+      
     .pf-content-container {
       padding: 50px 75px 50px 25px;
     }
@@ -104,6 +110,12 @@
     }
 }
     
+  #contact {
+   .pf-content-container {
+    padding: 50px 0px 50px 0px;
+    }
+}
+    
   #background {
     .pf-content-container {
       padding-left: 0px;
@@ -151,7 +163,13 @@
 
     
   #work-with-us {
-  .pf-content-container {
+   .pf-content-container {
+    padding: 50px 0px 50px 0px;
+    }
+}
+    
+  #contact {
+   .pf-content-container {
     padding: 50px 0px 50px 0px;
     }
 }
