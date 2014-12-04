@@ -635,39 +635,55 @@
                             <h1>Contact us</h1>
                         </header>
                     </div>
-                    <div class="col-sm-6 full">
+
+
+                    <article id="netherlands" class="location col-sm-6 full" itemscope itemtype="http://data-vocabulary.org/Organization">
                         <img src="/images/freedomlab-amsterdam.jpg" width="100%">
-                            <div class="address">
-                                <h3>Product Foundry</h3>
-                                <h4>Netherlands</h4>
-                                <p>Plantage Middenlaan 62<br/>
-                                1018 DH Amsterdam</p>
-                                <p>Phone: +31 6 43031884<br/>
-                                <style>
-                                  .domain::before {
-                                    content: "\0040";    /* Unicode character for @ symbol */
-                                  }
-                                </style>
-                                netherlands<span class="domain">product-foundry.com</span>
+
+                        <div class="details">
+                            <div class="title">
+                                <h3 itemprop="name">Product Foundry</h3>
+                                <h4 itemprop="country-name">The Netherlands</h4>
                             </div>
-                    </div>
-                    <div class="col-sm-6 full">
+                            <div class="content">
+                                <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                                    <span itemprop="street-address">Plantage Middenlaan 62</span><br/>
+                                    <span itemprop="postal-code">1018 DH</span>
+                                    <span itemprop="locality">Amsterdam</span><br>
+                                </p>
+                                <p>tel: <a itemprop="tel" href="tel:+31643031884">+31 6 43031884</a></p>
+                                <p><a itemprop="email" href="mailto:netherlands@product-foundry.com">netherlands@product-foundry.com</a></p>
+                                <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+                                    <meta itemprop="latitude" content="52.38641" />
+                                    <meta itemprop="longitude" content="4.87524" />
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="romania" class="location col-sm-6 full" itemscope itemtype="http://data-vocabulary.org/Organization">
                         <img src="/images/romania-cluj.jpg" width="100%">
-                        <div class="address">
-                                <h3>Product Foundry</h3>
-                                <h4>Romania</h4>
-                                <p>Str. Alba Iulia 14<br/>
-                                400197 Cluj Napoca</p>
-                                <p>Phone: +40 75 1282227<br/>
-                                <style>
-                                  .domain::before {
-                                    content: "\0040";    /* Unicode character for @ symbol */
-                                  }
-                                </style>
-                                romania<span class="domain">product-foundry.com</span>
-                            </p>
+
+                        <div class="details">
+                            <div class="title">
+                                <h3 itemprop="name">Product Foundry</h3>
+                                <h4 itemprop="country-name">Romania</h4>
                             </div>
-                    </div>
+                            <div class="content">
+                                <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                                    <span itemprop="street-address">Str. Alba Iulia 14</span><br/>
+                                    <span itemprop="postal-code">400197</span>
+                                    <span itemprop="locality">Cluj Napoca</span><br>
+                                </p>
+                                <p>tel: <a itemprop="tel" href="tel:+40751282227">+40 75 1282227</a></p>
+                                <p><a itemprop="email" href="mailto:romania@product-foundry.com">romania@product-foundry.com</a></p>
+                                <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+                                    <meta itemprop="latitude" content="46.76425" />
+                                    <meta itemprop="longitude" content="23.59732" />
+                                </span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
             <footer class="col-xs-12 footer">
