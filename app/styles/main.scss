@@ -376,7 +376,20 @@ nav {
   }
 }
 
+footer.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  color: #333;
+}
 
+.pf-content-container {
+  display: inline-block;
+  width: 100%;
+}
 
 @import "values";
 @import "change";
