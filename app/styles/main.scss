@@ -47,6 +47,23 @@ nav {
   overflow-y: auto;
   overflow-x: hidden;
 
+  &.nav-horizontal {
+    width: 100%;
+
+    ul.nav {
+      padding-left: 2%;
+      width: 100%;
+
+      li {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        width: calc((100% - 30px - 2%) / 6);
+        max-width: 13%;
+      }
+    }
+  }
+
   ul {
     display: table-cell;
     vertical-align: middle;
