@@ -1,6 +1,9 @@
 $ ->
   'use strict'
 
+  currentDate = new Date()
+  $('#current-year').text((currentDate).getFullYear())
+
   scrollToPosition = (event) ->
     if event?
       event.preventDefault()
