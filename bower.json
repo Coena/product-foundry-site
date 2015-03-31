@@ -7,7 +7,7 @@
     "twbs-bootstrap-sass": "~3.1.1",
     "loglevel": "~0.5.0",
     "hexlib": "~0.1.0",
-    "PreloadJS": "*"
+    "PreloadJS": "0.4.1"
   },
   "devDependencies": {}
 }
