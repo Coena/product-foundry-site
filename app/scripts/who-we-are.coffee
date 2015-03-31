@@ -1,7 +1,7 @@
 whowearegrid = (hex) ->
   elem = document.getElementById("who-we-are-grid")
 
-  ignoreEvents = ['mousewheel', 'DOMMouseScroll', 'panstart', 'panmove', 'panend']
+  ignoreEvents = ['mousewheel', 'DOMMouseScroll']
 
   # Really ugly way to prevent mouse wheel events
   hex.oldAddEvent = hex.addEvent
@@ -50,27 +50,17 @@ whowearegrid = (hex) ->
 
     grid.root.appendChild(cell[0])
 
-  add(2, -1, "logo", "")
-
-  add(1, 0, "location", "Netherlands")
-  add(0, 1, "person", "job")
-  add(0, 0, "person", "andre")
-  add(-1, 0, "person", "hung")
-  add(-1, 1, "person", "indranil")
-
-  add(2, -2, "location", "Romania")
-  add(4, -3, "person", "andreea")
-  add(3, -3, "person", "marian")
-  add(1, -2, "person", "daniel")
-  add(2, -3, "person", "teodora")
-  add(4, -4, "person", "marius")
-  add(3, -4, "person", "raluca")
-
-  add(3, -1, "location", "Germany")
-  add(4, -1, "person", "michael")
-
-  add(2, 0, "location", "India")
-  add(2, 1, "person", "sanjay")
+  add(5, -3, "person", "marian")
+  add(3, -3, "person", "daniel")
+  add(1, -3, "person", "teodora")
+  add(1, -1, "person", "marius")
+  add(5, -1, "person", "andreea")
+  add(3, -1, "person", "raluca")
+  add(-1, 1, "person", "job")
+  add(-1, -1, "person", "andre")
+  add(3, 1, "person", "hung")
+  add(1, 1, "person", "indranil")
+  add(-1, 1, "logo")
 
 $ ->
   $('#who-we-are-grid').show()
