@@ -51,11 +51,11 @@ whowearegrid = (hex) ->
   add(1, -1, "person", "marius")
   add(5, -1, "person", "andreea")
   add(3, -1, "person", "raluca")
-  add(-1, 1, "person", "job")
   add(-1, -1, "person", "andre")
-  add(3, 1, "person", "hung")
-  add(1, 1, "person", "indranil")
-  add(-1, 1, "logo", "you")
+  add(4, 1, "person", "job")
+  add(2, 1, "person", "hung")
+  add(0, 1, "person", "indranil")
+  add(-2, 1, "logo", "you")
 
 $ ->
   $('#who-we-are-grid').show()
