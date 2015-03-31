@@ -33,20 +33,15 @@ whowearegrid = (hex) ->
     cell.css('top', pos.y + "px")
     cell.attr('rel', type + '-' + content)
 
-    if (type == 'logo')
-    else
-    if (type == 'location')
-      cell.html(content)
-    else
-      cell.addClass(content)
-      srcElem = $('#' + content)
-      if (srcElem.length == 1)
-        titleElem = $('.title', srcElem)
-        contentElem = $('.content', srcElem)
-        trigger = if type == 'person' then 'hover' else 'click'
-        delay = if trigger == 'hover' then { show: 500, hide: 100 } else { show: 0, hide: 0 }
-        placement = if y < 0 then 'bottom' else 'top'
-        cell.popover({ placement: placement, trigger: trigger, title: titleElem.html(), content: contentElem.html(), delay: delay, html: true })
+    cell.addClass(content)
+    srcElem = $('#' + content)
+    if (srcElem.length == 1)
+      titleElem = $('.title', srcElem)
+      contentElem = $('.content', srcElem)
+      trigger = 'hover'
+      delay = { show: 500, hide: 100 }
+      placement = if y < 0 then 'bottom' else 'top'
+      cell.popover({ placement: placement, trigger: trigger, title: titleElem.html(), content: contentElem.html(), delay: delay, html: true })
 
     grid.root.appendChild(cell[0])
 
@@ -60,7 +55,7 @@ whowearegrid = (hex) ->
   add(-1, -1, "person", "andre")
   add(3, 1, "person", "hung")
   add(1, 1, "person", "indranil")
-  add(-1, 1, "logo")
+  add(-1, 1, "logo", "you")
 
 $ ->
   $('#who-we-are-grid').show()
