@@ -72,11 +72,12 @@ nav {
 
     &.nav-pills li.active a {
       color: inherit;
-      background-color: inherit;
+      background-color: transparent;
       border-radius: 0px;
 
-      &:hover {
+      &:hover, &:focus {
         color: inherit;
+        background-color: transparent;
       }
 
       &.nav-home {
@@ -94,15 +95,15 @@ nav {
       &.nav-portfolio {
         background-image: url("#{$base-url-img}purple-hover.svg");
       }
-        
+
       &.nav-work-with-us {
         background-image: url("#{$base-url-img}orange-hover.svg");
       }
-        
+
       &.nav-who-we-are {
         background-image: url("#{$base-url-img}blue-hover.svg");
       }
-      
+
       &.nav-contact {
         background-image: url("#{$base-url-img}turq-hover.svg");
       }
@@ -165,7 +166,7 @@ nav {
       background-image: url("#{$base-url-img}blue-hover.svg");
     }
   }
-    
+
   .nav-contact {
     background-image: url("#{$base-url-img}turq.svg");
 
@@ -333,37 +334,37 @@ nav {
     text-align: center;
     color: #333333;
   }
-    
+
     .panel-heading {
     padding: 60px 15px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     }
-    
+
     .panel-group .panel {
     margin-bottom: 0;
     border-radius: 0px;
     overflow: hidden;
     }
-    
-    
+
+
     .panel {
     margin-bottom: 20px;
     background-color: #ececef;
     border: 0px solid transparent;
-    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.05);    
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.05);
 }
-        
+
     .panel-group .panel-heading + .panel-collapse .panel-body {
     border-top: 0;
     box-shadow: inset 0px 5px 10px 0px rgba(23, 40, 93, 0.08);
     }
-    
+
     .panel-body {
     padding: 50px 100px 50px 100px;
     }
-    
-    
+
+
   p {
     text-align: justify;
   }
