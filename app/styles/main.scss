@@ -103,6 +103,10 @@ nav {
       &.nav-who-we-are {
         background-image: url("#{$base-url-img}blue-hover.svg");
       }
+        
+      &.nav-opinion {
+        background-image: url("#{$base-url-img}opinion-hover.svg");
+      }
 
       &.nav-contact {
         background-image: url("#{$base-url-img}turq-hover.svg");
@@ -167,6 +171,14 @@ nav {
     }
   }
 
+   .nav-opinion {
+    background-image: url("#{$base-url-img}opinion.svg");
+
+    &:hover {
+      background-image: url("#{$base-url-img}opinion-hover.svg");
+    }
+  }
+    
   .nav-contact {
     background-image: url("#{$base-url-img}turq.svg");
 
