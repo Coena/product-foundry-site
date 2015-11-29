@@ -543,7 +543,7 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        //'favicons',
+        'favicons',
         'htmlmin',
         'manifest:dist',
         'copy:email_logo'
