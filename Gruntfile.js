@@ -39,7 +39,8 @@ module.exports = function (grunt) {
                 tileBlackWhite: false,
                 tileColor: '#00259a',
                 html: '<%= config.dist %>/index.html',
-                HTMLPrefix: '/'
+                HTMLPrefix: '/',
+                debug: true
             },
             icons: {
                 src: '<%= config.app %>/images/favicon.png',
@@ -540,7 +541,7 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'favicons',
+        //'favicons',
         'htmlmin',
         'manifest:dist',
         'copy:email_logo'
