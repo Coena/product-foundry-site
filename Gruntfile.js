@@ -458,12 +458,23 @@ module.exports = function (grunt) {
             }
         },
 
+        compress : {
+            main : {
+                options : {
+                    archive : "dist/product-foundry-site.zip"
+                },
+                files : [
+                    { expand: true, src : "**/*", cwd : "dist/" }
+                ]
+            }
+        },
+
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
         modernizr: {
             dist: {
                 devFile: '<%= config.app %>/bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
+                dest: '<%= config.dist %>/scripts/vendor/modernizr.js',
                 tests: [
                     '<%= config.dist %>/scripts/{,*/}*.js',
                     '<%= config.dist %>/styles/{,*/}*.css',
@@ -546,7 +557,8 @@ module.exports = function (grunt) {
         'favicons',
         'htmlmin',
         'manifest:dist',
-        'copy:email_logo'
+        'copy:email_logo',
+        'compress'
     ]);
 
     grunt.registerTask('default', [
