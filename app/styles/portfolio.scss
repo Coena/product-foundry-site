@@ -1,10 +1,5 @@
 @import 'variables';
 
-#portfolio {
-  background: url("#{$base-url-img}pattern-light.svg") top left; background-size: 63px 63px;
-  color: $bg-color;
-}
-
 #background {
     .grid {
         overflow: hidden;
