@@ -138,50 +138,6 @@
   }
 }
 
-.no-touch #portfolio,.no-touch #background {
-  .grid {
-    figure.effect-pf {
-      background: transparent;
-
-      img {
-        opacity: 1;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.8s, transform 0.8s;
-        -webkit-transform: translate3d(-10px,0,0) scale(1);
-        transform: translate3d(-10px,0,0) scale(1);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-
-      p {
-        padding: 0 10px 0 35px;
-        width: 100%;
-        border-right: 1px solid #fff;
-        text-align: right;
-        opacity: 0;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(-40px,0,0);
-        transform: translate3d(-40px,0,0);
-      }
-
-      &:hover {
-        background: #202027;
-        img {
-          opacity: 0.3;
-          -webkit-transform: translate3d(0,0,0) scale(1.05);
-          transform: translate3d(0,0,0) scale(1.05);
-        }
-        p {
-          opacity: 1;
-          -webkit-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 620px) {
   #portfolio {
     header {
