@@ -103,7 +103,7 @@ nav {
       &.nav-who-we-are {
         background-image: url("#{$base-url-img}blue-hover.svg");
       }
-        
+
       &.nav-opinion {
         background-image: url("#{$base-url-img}opinion-hover.svg");
       }
@@ -178,7 +178,7 @@ nav {
       background-image: url("#{$base-url-img}opinion-hover.svg");
     }
   }
-    
+
   .nav-contact {
     background-image: url("#{$base-url-img}turq.svg");
 
@@ -408,6 +408,4 @@ footer.footer {
 @import "change";
 @import "portfolio";
 @import "background";
-@import "workwithus";
-@import "who-we-are";
 @import "contact";
