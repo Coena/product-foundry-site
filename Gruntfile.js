@@ -557,8 +557,13 @@ module.exports = function (grunt) {
         'favicons',
         'htmlmin',
         'manifest:dist',
-        'copy:email_logo',
-        'compress'
+        'copy:email_logo'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'clean',
+        'newer:jshint',
+        'build'
     ]);
 
     grunt.registerTask('default', [
