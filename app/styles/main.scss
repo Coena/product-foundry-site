@@ -38,6 +38,7 @@ section {
 
   min-height: 100%;
   position: relative;
+    display: flex;
 }
 
 nav {
@@ -407,5 +408,4 @@ footer.footer {
 @import "values";
 @import "change";
 @import "portfolio";
-@import "background";
 @import "contact";

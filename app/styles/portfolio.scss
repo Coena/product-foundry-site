@@ -2,8 +2,10 @@
 
 #portfolio {
   background: url("#{$base-url-img}pattern-light.svg") top left; background-size: 63px 63px;
-
   color: $bg-color;
+}
+
+#portfolio,#background {
 
   .pf-content-container {
     padding: 40px 0px 0px;
@@ -18,15 +20,14 @@
       color: #333333;
     }
   }
-  
+
   .grid {
     overflow: hidden;
     margin: 0;
-    max-width: 1920px;
     list-style: none;
     font-size: 0;
     white-space-collapsing: discard;
-    
+
     figure {
       position: relative;
       z-index: 1;
@@ -44,6 +45,7 @@
         display: block;
         min-height: 100%;
         opacity: 0.8;
+        min-width: 102%;
       }
       figcaption {
         position: absolute;
@@ -127,7 +129,7 @@
   }
 }
 
-.no-touch #portfolio {
+.no-touch #portfolio,.no-touch #background {
   .grid {
     figure.effect-pf {
       background: transparent;
@@ -172,7 +174,7 @@
 }
 
 @media (min-width: 620px) {
-  #portfolio {
+  #portfolio,#background {
     header {
       h1 {
         span {
@@ -194,7 +196,7 @@
 }
 
 @media (min-width: 1600px) {
-  #portfolio {
+  #portfolio,#background {
     .grid {
       width: calc(100% + 3px);
 
