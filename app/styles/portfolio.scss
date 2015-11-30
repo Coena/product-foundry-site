@@ -5,6 +5,20 @@
   color: $bg-color;
 }
 
+#background {
+    .grid {
+        overflow: hidden;
+        margin: 0;
+        list-style: none;
+        font-size: 0;
+        white-space-collapsing: discard;
+
+        figure {
+            height: 500px !important;
+        }
+    }
+}
+
 #portfolio,#background {
 
   .pf-content-container {
@@ -174,7 +188,7 @@
 }
 
 @media (min-width: 620px) {
-  #portfolio,#background {
+  #portfolio {
     header {
       h1 {
         span {
@@ -195,8 +209,51 @@
   }
 }
 
+@media (min-width: 620px) {
+  #background {
+      header {
+          h1 {
+              span {
+                  font-size: 45%;
+              }
+          }
+      }
+
+    .grid {
+      width: calc(100% + 2px);
+
+      figure {
+        width: 100%;
+        figcaption {
+          font-size: 1.25em;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1600px) {
-  #portfolio,#background {
+    #background {
+        header {
+            h1 {
+                span {
+                    font-size: 45%;
+                }
+            }
+        }
+        .grid {
+            width: calc(100% + 2px);
+
+            figure {
+                width: 50%;
+                figcaption {
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+
+  #portfolio {
     .grid {
       width: calc(100% + 3px);
 
